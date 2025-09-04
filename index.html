@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -529,20 +531,20 @@
               </div>
             </div>
           </div>
-          <form class="contact-form">
+          <form id="contact-form" class="contact-form">
             <div class="form-group">
-              <input type="text" placeholder="이름" required />
+              <input type="text" name="name" placeholder="이름" required />
             </div>
             <div class="form-group">
-              <input type="email" placeholder="이메일" required />
+              <input type="email" name="email" placeholder="이메일" required />
             </div>
             <div class="form-group">
-              <input type="text" placeholder="제목" required />
+              <input type="text" name="subject" placeholder="제목" required />
             </div>
             <div class="form-group">
-              <textarea placeholder="메시지" rows="5" required></textarea>
+              <textarea name="message" placeholder="메시지" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">메시지 보내기</button>
+            <button type="button" class="btn btn-primary" onclick="sendEmail()">메시지 보내기</button>
           </form>
         </div>
       </div>

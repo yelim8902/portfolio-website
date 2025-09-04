@@ -389,3 +389,79 @@ setTimeout(function() {
         console.log('Could not find 2 profile cards');
     }
 }, 3000);
+
+// EmailJS 초기화
+(function(){
+    emailjs.init("qsdvJh6oC_dtxRdKV"); // Public Key
+})();
+
+// 아예 간단하게 onclick 방식으로 변경
+function sendEmail() {
+    console.log('sendEmail function called!');
+    
+    // 직접 값 가져오기
+    const nameInput = document.querySelector('#contact-form input[name="name"]');
+    const emailInput = document.querySelector('#contact-form input[name="email"]');
+    const subjectInput = document.querySelector('#contact-form input[name="subject"]');
+    const messageInput = document.querySelector('#contact-form textarea[name="message"]');
+    
+    console.log('Input elements:', { nameInput, emailInput, subjectInput, messageInput });
+    
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const subject = subjectInput.value.trim();
+    const message = messageInput.value.trim();
+    
+    console.log('Values:', { name, email, subject, message });
+    
+    // 유효성 검사
+    if (!name || !email || !subject || !message) {
+        alert('모든 필드를 입력해주세요!');
+        return;
+    }
+    
+    if (!isValidEmail(email)) {
+        alert('올바른 이메일 주소를 입력해주세요!');
+        return;
+    }
+    
+    // 전송 버튼 비활성화
+    const submitButton = document.querySelector('#contact-form button');
+    const originalText = submitButton.textContent;
+    submitButton.disabled = true;
+    submitButton.textContent = '전송 중...';
+    
+    // EmailJS로 이메일 전송
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+        to_email: 'yelim2849@gmail.com'
+    };
+    
+    console.log('Sending email with params:', templateParams);
+    
+    emailjs.send('service_lyl', 'template_bmjsumh', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('메시지가 성공적으로 전송되었습니다!');
+            
+            // 폼 초기화
+            nameInput.value = '';
+            emailInput.value = '';
+            subjectInput.value = '';
+            messageInput.value = '';
+        })
+        .catch(function(error) {
+            console.log('FAILED...', error);
+            alert('메시지 전송에 실패했습니다. 다시 시도해주세요.');
+        })
+        .finally(function() {
+            // 버튼 복원
+            submitButton.disabled = false;
+            submitButton.textContent = originalText;
+        });
+}
+
+// onclick 방식으로 변경했으므로 이벤트 리스너 초기화 불필요
