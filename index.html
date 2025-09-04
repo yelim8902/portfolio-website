@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>포트폴리오 | 예림</title>
+    <title>yelim's portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,7 +19,7 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <a href="#home">예림</a>
+          <a href="#home">이예림(진강이)</a>
         </div>
         <ul class="nav-menu">
           <li class="nav-item">
@@ -33,6 +33,12 @@
           </li>
           <li class="nav-item">
             <a href="#projects" class="nav-link">프로젝트</a>
+          </li>
+          <li class="nav-item">
+            <a href="#activities" class="nav-link">활동</a>
+          </li>
+          <li class="nav-item">
+            <a href="#awards" class="nav-link">수상경력</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link">연락처</a>
@@ -50,15 +56,15 @@
     <section id="home" class="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <h1 class="hero-title">안녕하세요, 저는 이예림입니다.</h1>
-          <p class="hero-subtitle">
-            기술로서 금융 현장의 복잡한 문제를 해결하는 것을 좋아합니다.
-          </p>
+          <h1 class="hero-title">
+            안녕하세요<span class="comma">,</span><br />
+            이예림입니다.
+          </h1>
+          <p class="hero-subtitle">기술과 금융을 연결하는 빌더(Builder)</p>
           <p class="hero-description">
-            소프트웨어와 금융공학을 함께 전공하며, 매일 배운 것을 저만의 언어로
-            블로그에 풀어 쓰고 있습니다. 블록체인과 데이터 분야에 관심이 많고,
-            빠른 변화 속에서도 본질적인 가치를 지닌 기술을 꾸준히 배우고자
-            합니다.
+            소프트웨어와 금융공학을 함께 전공중인 학생입니다. 배운 것을 저만의
+            언어로 블로그에 풀어내는 것을 좋아합니다. 블록체인과 데이터 분야에
+            관심이 많습니다.
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
@@ -66,13 +72,28 @@
           </div>
         </div>
         <div class="hero-image">
-          <div class="profile-card">
-            <div class="profile-image">
-              <i class="fas fa-user"></i>
+          <div class="profile-cards">
+            <div class="profile-card main-photo">
+              <div class="profile-image">
+                <img src="이예림_취업용_증명사진.jpeg" alt="프로필 사진" />
+                <div class="image-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-code"></i>
+                    <span>Tech</Table></span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="profile-info">
-              <h3>예림</h3>
-              <p>아주대 소프트웨어 3학년</p>
+            <div class="profile-card finance-photo">
+              <div class="profile-image">
+                <img src="나_흑백.jpeg" alt="금융 전문가" />
+                <div class="image-overlay">
+                  <div class="overlay-content">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Finance</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -86,180 +107,55 @@
     <section id="about" class="about">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">소개</h2>
-          <p class="section-subtitle">저에 대해 더 자세히 알아보세요</p>
+          <h2 class="section-title">About</h2>
         </div>
         <div class="about-content">
           <div class="about-text">
-            <h3>금융과 기술을 잇는 개발자</h3>
-            <p>
-              아주대학교 소프트웨어학과 3학년으로, 금융공학을 함께 공부하고
-              있습니다. 블록체인과 데이터 분석 프로젝트를 직접 이끌며 팀워크와
-              문제 해결 경험을 쌓아왔습니다. 시사·경제에 꾸준히 관심을 가지며,
-              기술과 금융을 연결하는 시각을 키워가고 있습니다.
-            </p>
-            <div class="about-stats">
-              <div class="stat">
-                <h4>3</h4>
-                <p>수상 경력</p>
-              </div>
-              <div class="stat">
-                <h4>3회</h4>
-                <p>완료 프로젝트</p>
-              </div>
-              <div class="stat">
-                <h4>3개</h4>
-                <p>블로그 운영</p>
-              </div>
+            <div class="intro-text">
+              <h3>해상도가 높은 사람이 되고 싶습니다.</h3>
+              <p>
+                무엇을 하든 문제의 본질부터 탐구하는 것을 좋아합니다. <br />
+                문제의 본질을 먼저 보고 데이터로 검증합니다. 기술과 금융을 잇는
+                문제를 정의하고, 실험하고, 구현합니다.
+              </p>
             </div>
-          </div>
-          <div class="about-image">
-            <div class="image-placeholder">
-              <i class="fas fa-code"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">기술 스택</h2>
-          <p class="section-subtitle">제가 사용하는 기술들입니다</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Frontend</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <span>HTML5</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS3</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-react"></i>
-                <span>React</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-angular"></i>
-                <span>Angular</span>
+            <div class="simple-section">
+              <h4 class="simple-title">Education</h4>
+
+              <div class="simple-item">
+                <div class="simple-period">2023 – 현재</div>
+                <div class="simple-content">
+                  <h5>아주대학교</h5>
+                  <p>소프트웨어학과 재학, 금융공학과 복수전공</p>
+                  <ul class="simple-details">
+                    <li>C, Java, 자료구조, 알고리즘 등 기초 CS 지식 학습</li>
+                    <li>Python, R, 데이터 프로그래밍 학습</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="skill-category">
-            <h3>디자인 & 크리에이티브</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <i class="fas fa-image"></i>
-                <span>Photoshop</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-paint-brush"></i>
-                <span>Illustrator</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-video"></i>
-                <span>Premiere Pro</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-palette"></i>
-                <span>Canva</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-robot"></i>
-                <span>Stable Diffusion</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-blog"></i>
-                <span>블로그 마케팅</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-pen-fancy"></i>
-                <span>Figma</span>
-              </div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>데이터분석</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-chart-line"></i>
-                <span>Pandas</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-chart-bar"></i>
-                <span>NumPy</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-brain"></i>
-                <span>Scikit-learn</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-chart-pie"></i>
-                <span>Matplotlib</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-chart-area"></i>
-                <span>Seaborn</span>
-              </div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>블록체인</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <i class="fab fa-ethereum"></i>
-                <span>Ethereum</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-coins"></i>
-                <span>Solidity</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-link"></i>
-                <span>Web3.js</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-wallet"></i>
-                <span>MetaMask</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-cube"></i>
-                <span>IPFS</span>
-              </div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Tools</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <i class="fab fa-git-alt"></i>
-                <span>Git</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-sticky-note"></i>
-                <span>Notion</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-mobile-alt"></i>
-                <span>Responsive</span>
+
+            <div class="simple-section">
+              <h4 class="simple-title">Blog</h4>
+
+              <div class="blog-links">
+                <a
+                  href="https://zingangyyy.tistory.com/"
+                  class="simple-blog-link"
+                  target="_blank"
+                >
+                  <span class="blog-name">진강이의 성장일지 (기술/경제)</span>
+                  <span class="blog-platform">티스토리</span>
+                </a>
+                <a
+                  href="https://blog.naver.com/lyl2849"
+                  class="simple-blog-link"
+                  target="_blank"
+                >
+                  <span class="blog-name">진강이의 서랍</span>
+                  <span class="blog-platform">네이버</span>
+                </a>
               </div>
             </div>
           </div>
@@ -271,12 +167,11 @@
     <section id="projects" class="projects">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">프로젝트</h2>
-          <p class="section-subtitle">제가 작업한 프로젝트들을 확인해보세요</p>
+          <h2 class="section-title">Projects</h2>
         </div>
         <div class="projects-grid">
           <div class="project-card">
-            <div class="project-image">
+            <div class="project-image xai-aml-bg">
               <div class="project-overlay">
                 <div class="project-links">
                   <a
@@ -304,7 +199,7 @@
             </div>
           </div>
           <div class="project-card">
-            <div class="project-image">
+            <div class="project-image blog-dapp-bg">
               <div class="project-overlay">
                 <div class="project-links">
                   <a
@@ -317,10 +212,10 @@
               </div>
             </div>
             <div class="project-content">
-              <h3>Blog Study Certification DApp</h3>
+              <h3>Blog Study Certification Dapp (with DAO)</h3>
               <p>
-                블록체인 기반 학습 인증 및 블로그 플랫폼 - 스마트 컨트랙트를
-                통한 학습 증명 시스템
+                블록체인 기반 학습 인증 및 DAO 보증금 플랫폼 - 스마트 컨트랙트를
+                통한 학습 증명 & 보증금 관리 플랫폼
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Solidity</span>
@@ -332,7 +227,7 @@
             </div>
           </div>
           <div class="project-card">
-            <div class="project-image">
+            <div class="project-image dividend-bg">
               <div class="project-overlay">
                 <div class="project-links">
                   <a
@@ -359,6 +254,246 @@
               </div>
             </div>
           </div>
+          <div class="project-card">
+            <div class="project-image caria-bg">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://youtu.be/Pkpyuh3EIbo?si=VVxaOLltM5ghwVA2&utm_source=chatgpt.com"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Car-ia - P2P 카셰어링 플랫폼</h3>
+              <p>
+                블록체인 기반 P2P 카셰어링 플랫폼 기획 및 프론트엔드 구현, 원화
+                스테이블코인 결제 구조 설계
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Blockchain</span>
+                <span class="tech-tag">Stablecoin</span>
+                <span class="tech-tag">Frontend</span>
+                <span class="tech-tag">P2P</span>
+                <span class="tech-tag">React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item">HTML5</div>
+              <div class="skill-item">CSS3</div>
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">React</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Data Analysis</h3>
+            <div class="skill-items">
+              <div class="skill-item">Python</div>
+              <div class="skill-item">Pandas</div>
+              <div class="skill-item">NumPy</div>
+              <div class="skill-item">Scikit-learn</div>
+              <div class="skill-item">Matplotlib</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Blockchain</h3>
+            <div class="skill-items">
+              <div class="skill-item">Solidity</div>
+              <div class="skill-item">Ethereum</div>
+              <div class="skill-item">Web3.js</div>
+              <div class="skill-item">MetaMask</div>
+              <div class="skill-item">IPFS</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <div class="skill-items">
+              <div class="skill-item">Git</div>
+              <div class="skill-item">GitHub</div>
+              <div class="skill-item">Notion</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Design & Marketing</h3>
+            <div class="skill-items">
+              <div class="skill-item">Photoshop</div>
+              <div class="skill-item">Illustrator</div>
+              <div class="skill-item">Premiere Pro</div>
+              <div class="skill-item">Figma</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Activities</h2>
+        </div>
+        <div class="activities-timeline">
+          <div class="activity-timeline-item">
+            <div class="activity-badge active">
+              <i class="fas fa-rocket"></i>
+              <span class="activity-year">진행중</span>
+            </div>
+            <div class="activity-line"></div>
+            <div class="activity-timeline-details">
+              <h3>연세대 블록체인 소학회 Bay 16기</h3>
+              <p class="activity-org">연세대학교 소학회 Bay | 2025.07 ~ 진행</p>
+              <ul class="activity-points">
+                <li>DeFi·AML 최신 동향 연구 및 학술 교류</li>
+                <li>블록체인 컨트랙트 개발 및 운영,해커톤 참여</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="activity-timeline-item">
+            <div class="activity-badge active">
+              <i class="fas fa-code"></i>
+              <span class="activity-year">진행중</span>
+            </div>
+            <div class="activity-line"></div>
+            <div class="activity-timeline-details">
+              <h3>
+                Cross-Network에서의 AML 프로젝트<br />– 정책모듈러·데이터
+                분석·프론트엔드
+              </h3>
+              <p class="activity-org">아주대학교 파란학기 | 2025.07 ~ 진행</p>
+              <ul class="activity-points">
+                <li>
+                  국제 규제(FATF·특금법) 기반
+                  <strong>AML 정책 모듈 구조 설계</strong>
+                </li>
+                <li>
+                  크로스체인 거래 데이터 분석 및 이상거래 탐지 로직 개발
+                  (진행중)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="activity-timeline-item">
+            <div class="activity-badge completed">
+              <i class="fas fa-palette"></i>
+              <span class="activity-year">2024.02</span>
+            </div>
+            <div class="activity-line"></div>
+            <div class="activity-timeline-details">
+              <h3>MAC 24 센터 — 패키지 디자인 & 2D→3D 전환 리서치</h3>
+              <p class="activity-org">MAC 24 센터 | 2023.08 ~ 2024.02</p>
+              <ul class="activity-points">
+                <li>
+                  패키지 디자인 시안·목업 제작 및 인쇄 스펙 정리
+                  (Photoshop·Illustrator)
+                </li>
+                <li>
+                  2D→3D 전환 워크플로우 리서치: Stable Diffusion(+ControlNet)
+                  실험, Blender 임포트·후처리 테스트
+                </li>
+                <li>실험 노트/프리셋/샘플 정리 등 리서치 산출물 문서화</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="activity-timeline-item">
+            <div class="activity-badge completed">
+              <i class="fas fa-heart"></i>
+              <span class="activity-year">2023.12</span>
+            </div>
+            <div class="activity-line"></div>
+            <div class="activity-timeline-details">
+              <h3>
+                Paletting – 가치관 기반 소개팅 플랫폼 - 창업자 & 기획 리더
+              </h3>
+              <p class="activity-org">개인 창업 | 2023.08 ~ 2023.12</p>
+              <ul class="activity-points">
+                <li>
+                  가치관 설문 데이터를 활용한
+                  <strong>매칭 알고리즘 기획</strong>
+                </li>
+                <li>SNS 마케팅으로 <strong>150명+ 사용자 확보</strong></li>
+                <li>
+                  <strong>4인 팀 리딩</strong>, 서비스 기획·디자인·운영 총괄
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Awards</h2>
+        </div>
+        <div class="awards-grid">
+          <div class="award-card">
+            <div class="award-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="award-content">
+              <h3>미래도서관 정책 아이디어 해커톤 입상</h3>
+              <p class="award-organization">한국정보화진흥원 주관</p>
+              <p class="award-date">2023.11</p>
+              <div class="award-description">
+                <ul>
+                  <li>고령층 디지털정보격차 데이터(NIA) 기반 3차원 군집분석</li>
+                  <li>군집별 특성에 따라 맞춤형 정책 제안 및 시각화</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="award-content">
+              <h3>제 5회 SW융합창업캠프 우수상</h3>
+              <p class="award-organization">SW중심대학 주관</p>
+              <p class="award-date">2025.07</p>
+              <div class="award-description">
+                <ul>
+                  <li>
+                    암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓'
+                    제안
+                  </li>
+                  <li>
+                    팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의
+                    전체 아키텍처 설계 주도
+                  </li>
+                  <li>
+                    Solidity 기반 스마트컨트랙트를 활용해 티켓 가격 상한가, 전송
+                    제한 및 안전한 P2P 좌석 교환 메커니즘 설계,구현
+                  </li>
+                  <li>
+                    교육부·과기부 공동 주관 '2025 학생창업유망팀 300+' 선정
+                    (팀명 : 파토시마이너)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -367,10 +502,8 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">연락처</h2>
-          <p class="section-subtitle">
-            함께 일하고 싶으시다면 언제든 연락주세요
-          </p>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">궁금한 것이 있다면 언제든 연락주세요</p>
         </div>
         <div class="contact-content">
           <div class="contact-info">
@@ -378,21 +511,21 @@
               <i class="fas fa-envelope"></i>
               <div>
                 <h4>이메일</h4>
-                <p>yelim@example.com</p>
+                <p>yelim2849@gmail.com</p>
               </div>
             </div>
             <div class="contact-item">
               <i class="fas fa-phone"></i>
               <div>
                 <h4>전화번호</h4>
-                <p>010-1234-5678</p>
+                <p>010-2849-8902</p>
               </div>
             </div>
             <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <h4>위치</h4>
-                <p>서울, 대한민국</p>
+                <p>판교, 경기도, 대한민국</p>
               </div>
             </div>
           </div>
@@ -420,7 +553,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-text">
-            <p>&copy; 2024 예림. All rights reserved.</p>
+            <p>&copy; 2025 예림. All rights reserved.</p>
           </div>
           <div class="social-links">
             <a href="#" class="social-link"><i class="fab fa-github"></i></a>

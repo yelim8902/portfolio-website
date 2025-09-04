@@ -192,6 +192,12 @@ function showNotification(message, type = 'info') {
 
 // Typing animation for hero title
 function typeWriter(element, text, speed = 100) {
+    // HTML 태그가 포함된 텍스트의 경우 바로 설정
+    if (text.includes('<') && text.includes('>')) {
+        element.innerHTML = text;
+        return;
+    }
+    
     let i = 0;
     element.innerHTML = '';
     
@@ -316,3 +322,70 @@ scrollToTopBtn.addEventListener('mouseenter', function() {
 scrollToTopBtn.addEventListener('mouseleave', function() {
     this.style.transform = 'scale(1)';
 });
+
+// 즉시 실행 테스트
+console.log('Script loaded!');
+
+// Profile card switching functionality
+setTimeout(function() {
+    console.log('Starting profile card initialization...');
+    
+    const profileCards = document.querySelectorAll('.profile-card');
+    console.log('Found cards:', profileCards.length);
+    
+    if (profileCards.length >= 2) {
+        const card1 = profileCards[0];
+        const card2 = profileCards[1];
+        
+        console.log('Setting up card 1 and card 2');
+        
+        // 간단한 클릭 이벤트
+        card1.addEventListener('click', function() {
+            console.log('Card 1 clicked - switching!');
+            
+            // z-index 변경
+            card1.style.zIndex = '2';
+            card2.style.zIndex = '5';
+            
+            // 간단한 애니메이션
+            card2.style.transition = 'all 0.3s ease';
+            card1.style.transition = 'all 0.3s ease';
+            
+            card2.style.transform = 'scale(1.05)';
+            card1.style.transform = 'scale(0.95)';
+            
+            setTimeout(() => {
+                card2.style.transform = 'scale(1)';
+                card1.style.transform = 'scale(1)';
+            }, 300);
+        });
+        
+        card2.addEventListener('click', function() {
+            console.log('Card 2 (finance) clicked - bringing tech card to front!');
+            
+            // z-index 변경 - 기술 카드(card1)를 앞으로
+            card2.style.zIndex = '2';
+            card1.style.zIndex = '5';
+            
+            // 간단한 애니메이션 - 기술 카드가 앞으로 나오는 효과
+            card1.style.transition = 'all 0.3s ease';
+            card2.style.transition = 'all 0.3s ease';
+            
+            card1.style.transform = 'scale(1.05)';
+            card2.style.transform = 'scale(0.95)';
+            
+            setTimeout(() => {
+                card1.style.transform = 'scale(1)';
+                card2.style.transform = 'scale(1)';
+            }, 300);
+        });
+        
+        // 커서 설정
+        card1.style.cursor = 'pointer';
+        card2.style.cursor = 'pointer';
+        
+        console.log('Profile cards setup complete!');
+    } else {
+        console.log('Could not find 2 profile cards');
+    }
+}, 3000);
