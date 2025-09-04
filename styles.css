@@ -1442,11 +1442,19 @@ section {
     .profile-cards {
         flex-direction: column;
         gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
     }
     
     .profile-card {
         max-width: 300px;
         margin: 0 auto;
+        position: relative !important;
+        left: auto !important;
+        margin-left: auto !important;
+        right: auto;
     }
     
     .profile-image {
@@ -1503,5 +1511,28 @@ section {
     
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .profile-cards {
+        padding: 10px;
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .profile-card {
+        max-width: 280px;
+        width: 90%;
+        position: static !important;
+        left: auto !important;
+        margin: 10px auto !important;
+        transform: none !important;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
     }
 }
