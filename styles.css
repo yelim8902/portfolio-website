@@ -1406,6 +1406,63 @@ section {
     }
 }
 
+/* PDF Print Styles */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        background: white !important;
+    }
+    
+    .navbar {
+        display: none !important;
+    }
+    
+    .hero {
+        page-break-inside: avoid;
+        margin-bottom: 20pt;
+    }
+    
+    .profile-cards {
+        position: relative !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 20pt !important;
+        justify-content: center !important;
+    }
+    
+    .profile-card {
+        position: relative !important;
+        left: auto !important;
+        margin-left: auto !important;
+        page-break-inside: avoid;
+        max-width: 200pt;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+        margin-bottom: 30pt;
+    }
+    
+    .project-card, .activity-card, .award-card {
+        page-break-inside: avoid;
+        margin-bottom: 15pt;
+        box-shadow: none !important;
+        border: 1pt solid #ddd;
+    }
+    
+    h1 { font-size: 24pt; }
+    h2 { font-size: 18pt; page-break-after: avoid; }
+    h3 { font-size: 14pt; page-break-after: avoid; }
+    h4 { font-size: 12pt; page-break-after: avoid; }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
