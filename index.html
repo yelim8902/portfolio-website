@@ -1,334 +1,437 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>포트폴리오 | 예림</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">예림</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">홈</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">소개</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">기술</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">프로젝트</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">연락처</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">예림</a>
         </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">홈</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">소개</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">기술</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">프로젝트</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">연락처</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    안녕하세요, <span class="highlight">예림</span>입니다
-                </h1>
-                <p class="hero-subtitle">
-                    창의적이고 혁신적인 웹 개발자
-                </p>
-                <p class="hero-description">
-                    사용자 경험을 최우선으로 생각하며, 아름답고 기능적인 웹사이트를 만드는 것을 좋아합니다.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
-                    <a href="#contact" class="btn btn-secondary">연락하기</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="profile-info">
-                        <h3>예림</h3>
-                        <p>웹 개발자</p>
-                    </div>
-                </div>
-            </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">안녕하세요, 저는 이예림입니다.</h1>
+          <p class="hero-subtitle">
+            기술로서 금융 현장의 복잡한 문제를 해결하는 것을 좋아합니다.
+          </p>
+          <p class="hero-description">
+            소프트웨어와 금융공학을 함께 전공하며, 매일 배운 것을 저만의 언어로
+            블로그에 풀어 쓰고 있습니다. 블록체인과 데이터 분야에 관심이 많고,
+            빠른 변화 속에서도 본질적인 가치를 지닌 기술을 꾸준히 배우고자
+            합니다.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+            <a href="#contact" class="btn btn-secondary">연락하기</a>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <div class="profile-image">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="profile-info">
+              <h3>예림</h3>
+              <p>아주대 소프트웨어 3학년</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">소개</h2>
-                <p class="section-subtitle">저에 대해 더 자세히 알아보세요</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>열정적인 개발자</h3>
-                    <p>
-                        웹 개발에 대한 열정을 가지고 있으며, 최신 기술 트렌드를 따라가며 
-                        지속적으로 학습하고 있습니다. 사용자 중심의 사고로 문제를 해결하고, 
-                        팀워크를 중시하는 개발자입니다.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h4>3+</h4>
-                            <p>년 경력</p>
-                        </div>
-                        <div class="stat">
-                            <h4>20+</h4>
-                            <p>완료 프로젝트</p>
-                        </div>
-                        <div class="stat">
-                            <h4>100%</h4>
-                            <p>만족도</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-code"></i>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">소개</h2>
+          <p class="section-subtitle">저에 대해 더 자세히 알아보세요</p>
         </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>금융과 기술을 잇는 개발자</h3>
+            <p>
+              아주대학교 소프트웨어학과 3학년으로, 금융공학을 함께 공부하고
+              있습니다. 블록체인과 데이터 분석 프로젝트를 직접 이끌며 팀워크와
+              문제 해결 경험을 쌓아왔습니다. 시사·경제에 꾸준히 관심을 가지며,
+              기술과 금융을 연결하는 시각을 키워가고 있습니다.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h4>3</h4>
+                <p>수상 경력</p>
+              </div>
+              <div class="stat">
+                <h4>3회</h4>
+                <p>완료 프로젝트</p>
+              </div>
+              <div class="stat">
+                <h4>3개</h4>
+                <p>블로그 운영</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-placeholder">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">기술 스택</h2>
-                <p class="section-subtitle">제가 사용하는 기술들입니다</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-vue"></i>
-                            <span>Vue.js</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Responsive</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">기술 스택</h2>
+          <p class="section-subtitle">제가 사용하는 기술들입니다</p>
         </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-angular"></i>
+                <span>Angular</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>디자인 & 크리에이티브</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fas fa-image"></i>
+                <span>Photoshop</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-paint-brush"></i>
+                <span>Illustrator</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-video"></i>
+                <span>Premiere Pro</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-palette"></i>
+                <span>Canva</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-robot"></i>
+                <span>Stable Diffusion</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-blog"></i>
+                <span>블로그 마케팅</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-pen-fancy"></i>
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>데이터분석</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Pandas</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>NumPy</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-brain"></i>
+                <span>Scikit-learn</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-pie"></i>
+                <span>Matplotlib</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-area"></i>
+                <span>Seaborn</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>블록체인</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-ethereum"></i>
+                <span>Ethereum</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-coins"></i>
+                <span>Solidity</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-link"></i>
+                <span>Web3.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-wallet"></i>
+                <span>MetaMask</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-cube"></i>
+                <span>IPFS</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-sticky-note"></i>
+                <span>Notion</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">프로젝트</h2>
-                <p class="section-subtitle">제가 작업한 프로젝트들을 확인해보세요</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>E-commerce 웹사이트</h3>
-                        <p>React와 Node.js를 사용한 온라인 쇼핑몰 플랫폼</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>실시간 채팅 앱</h3>
-                        <p>Socket.io를 활용한 실시간 메신저 애플리케이션</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Socket.io</span>
-                            <span class="tech-tag">Express</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>날씨 앱</h3>
-                        <p>API를 활용한 반응형 날씨 정보 애플리케이션</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">API</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">프로젝트</h2>
+          <p class="section-subtitle">제가 작업한 프로젝트들을 확인해보세요</p>
         </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/yelim8902/XAI_AML"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>XAI_AML - 의심거래 탐지 시스템</h3>
+              <p>
+                SHAP/LIME 기반 XAI를 활용한 금융 거래 이상탐지 및 STR 보고서
+                자동 생성 시스템
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LightGBM</span>
+                <span class="tech-tag">SHAP</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Scikit-learn</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/yelim8902/blog-study-certification-dapp.git"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Blog Study Certification DApp</h3>
+              <p>
+                블록체인 기반 학습 인증 및 블로그 플랫폼 - 스마트 컨트랙트를
+                통한 학습 증명 시스템
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Solidity</span>
+                <span class="tech-tag">Web3.js</span>
+                <span class="tech-tag">Ethereum</span>
+                <span class="tech-tag">IPFS</span>
+                <span class="tech-tag">MetaMask</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/yelim8902/DividendStock-simulation"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Dividend Stock Simulation</h3>
+              <p>
+                배당주 투자 시뮬레이션 및 포트폴리오 최적화를 위한 데이터 분석
+                프로젝트
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Seaborn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">연락처</h2>
-                <p class="section-subtitle">함께 일하고 싶으시다면 언제든 연락주세요</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>이메일</h4>
-                            <p>yelim@example.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>전화번호</h4>
-                            <p>010-1234-5678</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>위치</h4>
-                            <p>서울, 대한민국</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="이름" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="이메일" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="제목" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="메시지" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">메시지 보내기</button>
-                </form>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">연락처</h2>
+          <p class="section-subtitle">
+            함께 일하고 싶으시다면 언제든 연락주세요
+          </p>
         </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>이메일</h4>
+                <p>yelim@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>전화번호</h4>
+                <p>010-1234-5678</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>위치</h4>
+                <p>서울, 대한민국</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="이름" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="이메일" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="제목" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="메시지" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">메시지 보내기</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2024 예림. All rights reserved.</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2024 예림. All rights reserved.</p>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
