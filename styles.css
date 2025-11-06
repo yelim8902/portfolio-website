@@ -979,22 +979,22 @@ section {
 /* 프로젝트별 배경 이미지 */
 .project-image.xai-aml-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("이력서_XAI.jpg");
+    url("assets/images/이력서_XAI.jpg");
 }
 
 .project-image.dividend-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("이력서프로젝트용사진_배당금.jpg");
+    url("assets/images/이력서프로젝트용사진_배당금.jpg");
 }
 
 .project-image.blog-dapp-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("이력서_공부Dapp.jpg");
+    url("assets/images/이력서_공부Dapp.jpg");
 }
 
 .project-image.caria-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("Car-ia_카쉐어링플랫폼_ppt의 사본.jpg");
+    url("assets/images/Car-ia_카쉐어링플랫폼_ppt의 사본.jpg");
 }
 
 .project-overlay {

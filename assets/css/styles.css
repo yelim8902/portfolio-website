@@ -1,0 +1,58 @@
+/* moved from root styles.css */
+::root {
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #2c3e50;
+  --color-muted: #7f8c8d;
+  --color-primary: #3498db;
+  --color-primary-700: #2980b9;
+  --color-accent: #2ecc71;
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+  --radius-lg: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f1115;
+    --color-surface: #161a22;
+    --color-text: #e6edf3;
+    --color-muted: #9aa7b1;
+    --color-primary: #4aa3ff;
+    --color-primary-700: #2d7bd6;
+    --color-accent: #51d88a;
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.45);
+  }
+}
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+/* Page load fade-in */
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+/* ... rest of original CSS content retained ... */
