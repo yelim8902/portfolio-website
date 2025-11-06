@@ -1000,7 +1000,7 @@ section {
 /* TRACE-X background */
 .project-image.tracex-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("assets/images/MPO구조.jpg");
+    url("assets/images/proj-tracex.jpg");
 }
 
 .project-overlay {
