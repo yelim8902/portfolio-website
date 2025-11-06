@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>yelim's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
@@ -14,9 +20,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <!-- EmailJS CDN -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
   <body>
+    <a class="skip-link" href="#home">Skip to content</a>
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
@@ -77,18 +87,28 @@
           <div class="profile-cards">
             <div class="profile-card main-photo">
               <div class="profile-image">
-                <img src="이예림_취업용_증명사진.jpeg" alt="프로필 사진" />
+                <img
+                  src="이예림_취업용_증명사진.jpeg"
+                  alt="프로필 사진"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div class="image-overlay">
                   <div class="overlay-content">
                     <i class="fas fa-code"></i>
-                    <span>Tech</Table></span>
+                    <span>Tech</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="profile-card finance-photo">
               <div class="profile-image">
-                <img src="나_흑백.jpeg" alt="금융 전문가" />
+                <img
+                  src="나_흑백.jpeg"
+                  alt="금융 전문가"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div class="image-overlay">
                   <div class="overlay-content">
                     <i class="fas fa-chart-line"></i>
@@ -362,7 +382,7 @@
               <h3>연세대 블록체인 소학회 Bay 16기</h3>
               <p class="activity-org">연세대학교 소학회 Bay | 2025.07 ~ 진행</p>
               <ul class="activity-points">
-                <li>DeFi·AML 최신 동향 연구 및 학술 교류</li>
+                <li>DeFi/AML 최신 동향 연구 및 학술 교류</li>
                 <li>블록체인 컨트랙트 개발 및 운영,해커톤 참여</li>
               </ul>
             </div>
@@ -376,42 +396,24 @@
             <div class="activity-line"></div>
             <div class="activity-timeline-details">
               <h3>
-                Cross-Network에서의 AML 프로젝트<br />– 정책모듈러·데이터
-                분석·프론트엔드
+                블록체인 자금거래 모니터링 시스템 구축<br />– 이상거래
+                탐지/리스크 스코어링 AI
               </h3>
               <p class="activity-org">아주대학교 파란학기 | 2025.07 ~ 진행</p>
               <ul class="activity-points">
+                <li>국제 규제(FATF, 특금법) 기반 AML 정책 모듈 구조 설계</li>
                 <li>
-                  국제 규제(FATF·특금법) 기반
-                  <strong>AML 정책 모듈 구조 설계</strong>
+                  이상거래 탐지/리스크 스코어링 AI 담당 — 다중 패턴 기반 모델
+                  (MPOCryptoML) 재현 및 적용
                 </li>
                 <li>
-                  크로스체인 거래 데이터 분석 및 이상거래 탐지 로직 개발
-                  (진행중)
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="activity-timeline-item">
-            <div class="activity-badge completed">
-              <i class="fas fa-palette"></i>
-              <span class="activity-year">2024.02</span>
-            </div>
-            <div class="activity-line"></div>
-            <div class="activity-timeline-details">
-              <h3>MAC 24 센터 — 패키지 디자인 & 2D→3D 전환 리서치</h3>
-              <p class="activity-org">MAC 24 센터 | 2023.08 ~ 2024.02</p>
-              <ul class="activity-points">
-                <li>
-                  패키지 디자인 시안·목업 제작 및 인쇄 스펙 정리
-                  (Photoshop·Illustrator)
+                  단일체인을 넘어 멀티체인/크로스체인 거래 추적 및 탐지 고도화
                 </li>
                 <li>
-                  2D→3D 전환 워크플로우 리서치: Stable Diffusion(+ControlNet)
-                  실험, Blender 임포트·후처리 테스트
+                  블랙박스형 모델 지양, 피처 엔지니어링으로 탐지 근거 설명 가능
+                  구조
                 </li>
-                <li>실험 노트/프리셋/샘플 정리 등 리서치 산출물 문서화</li>
+                <li>라벨 부족 환경에서 준지도 학습으로 성능 확보</li>
               </ul>
             </div>
           </div>
@@ -455,9 +457,12 @@
               <i class="fas fa-trophy"></i>
             </div>
             <div class="award-content">
-              <h3>미래도서관 정책 아이디어 해커톤 입상</h3>
+              <h3>미래도서관 정책 아이디어 해커톤</h3>
               <p class="award-organization">한국정보화진흥원 주관</p>
-              <p class="award-date">2023.11</p>
+              <p class="award-date">2024.04.12</p>
+              <p class="award-level">
+                <span class="award-badge">입상(4등)</span>
+              </p>
               <div class="award-description">
                 <ul>
                   <li>고령층 디지털정보격차 데이터(NIA) 기반 3차원 군집분석</li>
@@ -471,9 +476,10 @@
               <i class="fas fa-medal"></i>
             </div>
             <div class="award-content">
-              <h3>제 5회 SW융합창업캠프 우수상</h3>
-              <p class="award-organization">SW중심대학 주관</p>
-              <p class="award-date">2025.07</p>
+              <h3>2025년 제 5회 SW융합창업캠프</h3>
+              <p class="award-organization">경희대학교 SW중심대학사업단</p>
+              <p class="award-date">2025.07.05</p>
+              <p class="award-level"><span class="award-badge">우수상</span></p>
               <div class="award-description">
                 <ul>
                   <li>
@@ -484,13 +490,33 @@
                     팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의
                     전체 아키텍처 설계 주도
                   </li>
+
                   <li>
-                    Solidity 기반 스마트컨트랙트를 활용해 티켓 가격 상한가, 전송
-                    제한 및 안전한 P2P 좌석 교환 메커니즘 설계,구현
-                  </li>
-                  <li>
-                    교육부·과기부 공동 주관 '2025 학생창업유망팀 300+' 선정
+                    교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정
                     (팀명 : 파토시마이너)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="award-content">
+              <h3>2025 AJOU SOFTCON (SW 기초교육)</h3>
+              <p class="award-organization">
+                Ajou University SW Convergence Education Center
+              </p>
+              <p class="award-date">2025.09.30</p>
+              <p class="award-level">
+                <span class="award-badge">최우수상</span>
+              </p>
+              <div class="award-description">
+                <ul>
+                  <li>SHAP-XAI 기반 STR 보고서 자동화 시스템 설계/구현</li>
+                  <li>
+                    이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화
                   </li>
                 </ul>
               </div>
@@ -542,9 +568,16 @@
               <input type="text" name="subject" placeholder="제목" required />
             </div>
             <div class="form-group">
-              <textarea name="message" placeholder="메시지" rows="5" required></textarea>
+              <textarea
+                name="message"
+                placeholder="메시지"
+                rows="5"
+                required
+              ></textarea>
             </div>
-            <button type="button" class="btn btn-primary" onclick="sendEmail()">메시지 보내기</button>
+            <button type="button" class="btn btn-primary" onclick="sendEmail()">
+              메시지 보내기
+            </button>
           </form>
         </div>
       </div>
@@ -558,10 +591,42 @@
             <p>&copy; 2025 예림. All rights reserved.</p>
           </div>
           <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://github.com/yelim8902"
+              class="social-link"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-github" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yelim-lee-80899a305/"
+              class="social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-linkedin" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://blog.naver.com/lyl2849"
+              class="social-link"
+              aria-label="Naver Blog"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="https://cdn.simpleicons.org/naver/ffffff"
+                alt="Naver Blog icon"
+            /></a>
+            <a
+              href="https://zingangyyy.tistory.com/"
+              class="social-link"
+              aria-label="Tistory Blog"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="https://cdn.simpleicons.org/tistory/ffffff"
+                alt="Tistory icon"
+            /></a>
           </div>
         </div>
       </div>
