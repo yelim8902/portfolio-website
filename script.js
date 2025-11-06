@@ -198,29 +198,15 @@ function typeWriter(element, text, speed = 100) {
   type();
 }
 
-// Initialize typing animation when page loads
+// Initialize hero title (no typewriter for cleaner feel)
 window.addEventListener("load", () => {
   const heroTitle = document.querySelector(".hero-title");
   if (heroTitle) {
-    const originalText = heroTitle.innerHTML;
-    typeWriter(heroTitle, originalText, 50);
+    heroTitle.innerHTML = heroTitle.innerHTML;
   }
 });
 
-// Parallax effect for hero section (disabled if reduced motion)
-const prefersReducedMotion =
-  window.matchMedia &&
-  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-if (!prefersReducedMotion) {
-  window.addEventListener("scroll", () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector(".hero");
-    if (hero) {
-      const rate = scrolled * -0.5;
-      hero.style.transform = `translateY(${rate}px)`;
-    }
-  });
-}
+// Remove parallax effect to reduce motion and improve clarity
 
 // Add loading animation
 window.addEventListener("load", () => {
