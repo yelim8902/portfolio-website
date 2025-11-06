@@ -997,6 +997,12 @@ section {
     url("assets/images/Car-ia_카쉐어링플랫폼_ppt의 사본.jpg");
 }
 
+/* TRACE-X background */
+.project-image.tracex-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("assets/images/MPO구조.jpg");
+}
+
 .project-overlay {
   position: absolute;
   top: 0;
