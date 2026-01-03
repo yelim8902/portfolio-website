@@ -1,3 +1,23 @@
+// Profile Image Toggle
+const profileCard = document.getElementById("profileCard");
+const profileImage = document.getElementById("profileImage");
+const profileImages = [
+  "assets/images/profile-main.jpg?v=2",
+  "assets/images/profile-finance.jpg?v=2",
+];
+let currentProfileIndex = 0;
+
+if (profileCard && profileImage) {
+  profileCard.addEventListener("click", () => {
+    currentProfileIndex = (currentProfileIndex + 1) % profileImages.length;
+    profileImage.style.opacity = "0";
+    setTimeout(() => {
+      profileImage.src = profileImages[currentProfileIndex];
+      profileImage.style.opacity = "1";
+    }, 150);
+  });
+}
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
