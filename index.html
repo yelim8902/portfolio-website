@@ -84,7 +84,7 @@
           </li>
         </ul>
         <div class="hamburger">
-          <span class="bar"></span>~~
+          <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
@@ -95,14 +95,7 @@
     <section id="home" class="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <h1 class="hero-title">
-            <span class="word-animate" style="--delay: 0.1s">안녕하세요</span
-            ><span class="comma word-animate" style="--delay: 0.4s">,</span
-            ><br />
-            <span class="word-animate" style="--delay: 0.6s"
-              >이예림입니다.</span
-            >
-          </h1>
+          <h1 class="hero-title" id="heroTitle">안녕하세요, 이예림입니다.</h1>
           <div class="hero-keywords">
             <span class="keyword-tag">
               <i class="fas fa-link"></i>
@@ -462,71 +455,43 @@
         </div>
         <div class="activities-timeline">
           <div class="activity-timeline-item">
-            <div class="activity-badge active">
-              <i class="fas fa-rocket"></i>
-              <span class="activity-year">진행중</span>
+            <div class="activity-header">
+              <div class="activity-timeline-details">
+                <h3>연세대 블록체인 소학회 Bay 16기</h3>
+                <p class="activity-org">
+                  연세대학교 소학회 Bay | 2025.07 ~ 진행
+                </p>
+              </div>
+              <div class="activity-badge active">
+                <i class="fas fa-rocket"></i>
+                <span class="activity-year">진행중</span>
+              </div>
             </div>
-            <div class="activity-line"></div>
-            <div class="activity-timeline-details">
-              <h3>연세대 블록체인 소학회 Bay 16기</h3>
-              <p class="activity-org">연세대학교 소학회 Bay | 2025.07 ~ 진행</p>
-              <ul class="activity-points">
-                <li>크립토 모니터링 세션 리드</li>
-                <li>DeFi/AML 최신 동향 연구 및 학술 교류</li>
-                <li>블록체인 컨트랙트 개발 및 운영,해커톤 참여</li>
-              </ul>
-            </div>
+            <ul class="activity-points">
+              <li>크립토 모니터링 세션 리드</li>
+              <li>DeFi/AML 최신 동향 연구 및 학술 교류</li>
+              <li>블록체인 컨트랙트 개발 및 운영,해커톤 참여</li>
+            </ul>
           </div>
 
           <div class="activity-timeline-item">
-            <div class="activity-badge completed">
-              <i class="fas fa-code"></i>
-              <span class="activity-year">2025.12</span>
+            <div class="activity-header">
+              <div class="activity-timeline-details">
+                <h3>
+                  Paletting – 가치관 기반 소개팅 플랫폼 - 창업자 & 기획 리더
+                </h3>
+                <p class="activity-org">개인 창업 | 2023.08 ~ 2023.12</p>
+              </div>
+              <div class="activity-badge completed">
+                <i class="fas fa-heart"></i>
+                <span class="activity-year">2023.12</span>
+              </div>
             </div>
-            <div class="activity-line"></div>
-            <div class="activity-timeline-details">
-              <h3>
-                블록체인 자금거래 모니터링 시스템 구축<br />– 이상거래
-                탐지/리스크 스코어링 AI
-              </h3>
-              <p class="activity-org">
-                아주대학교 파란학기 | 2025.07 ~ 2025.12
-              </p>
-              <ul class="activity-points">
-                <li>국제 규제(FATF, 특금법) 기반 AML 정책 모듈 구조 설계</li>
-                <li>
-                  이상거래 탐지/리스크 스코어링 AI 담당 — 다중 패턴 기반 모델
-                  (MPOCryptoML) 재현 및 적용
-                </li>
-                <li>
-                  단일체인을 넘어 멀티체인/크로스체인 거래 추적 및 탐지 고도화
-                </li>
-                <li>
-                  도메인 지식 기반 피처 엔지니어링으로 탐지 근거 설명 가능성
-                  확보
-                </li>
-                <li>라벨 부족 환경에서 준지도 학습으로 성능 확보</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="activity-timeline-item">
-            <div class="activity-badge completed">
-              <i class="fas fa-heart"></i>
-              <span class="activity-year">2023.12</span>
-            </div>
-            <div class="activity-line"></div>
-            <div class="activity-timeline-details">
-              <h3>
-                Paletting – 가치관 기반 소개팅 플랫폼 - 창업자 & 기획 리더
-              </h3>
-              <p class="activity-org">개인 창업 | 2023.08 ~ 2023.12</p>
-              <ul class="activity-points">
-                <li>가치관 설문 데이터를 활용한 매칭 알고리즘 기획</li>
-                <li>SNS 마케팅으로 150명+ 사용자 확보</li>
-                <li>4인 팀 리딩, 서비스 기획·디자인·운영 총괄</li>
-              </ul>
-            </div>
+            <ul class="activity-points">
+              <li>가치관 설문 데이터를 활용한 매칭 알고리즘 기획</li>
+              <li>SNS 마케팅으로 150명+ 사용자 확보</li>
+              <li>4인 팀 리딩, 서비스 기획·디자인·운영 총괄</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -540,94 +505,103 @@
         </div>
         <div class="awards-grid">
           <div class="award-card">
-            <div class="award-icon">
-              <i class="fas fa-medal"></i>
-            </div>
-            <div class="award-content">
-              <h3>2025-2 AJOU SOFTCON 연구부문</h3>
-              <p class="award-organization">아주대학교 SW융합교육원장</p>
-              <p class="award-date">2025.12.04</p>
-              <p class="award-level">
+            <div class="award-header">
+              <div class="award-content">
+                <h3>2025-2 AJOU SOFTCON 연구부문</h3>
+                <div class="award-meta">
+                  <span class="award-organization"
+                    >아주대학교 SW융합교육원</span
+                  >
+                  <span class="award-date">2025.12.04</span>
+                </div>
+              </div>
+              <div class="award-level">
                 <span class="award-badge">우수상</span>
-              </p>
-              <div class="award-description">
-                <ul>
-                  <li>
-                    Rule-Based Scoring과 Graph Pattern Analysis를 통합한 2단계
-                    하이브리드 블록체인 AML 탐지 시스템
-                  </li>
-                </ul>
               </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>
+                  Rule-Based Scoring과 Graph Pattern Analysis를 통합한 2단계
+                  하이브리드 블록체인 AML 탐지 시스템
+                </li>
+              </ul>
             </div>
           </div>
           <div class="award-card">
-            <div class="award-icon">
-              <i class="fas fa-crown"></i>
-            </div>
-            <div class="award-content">
-              <h3>2025 AJOU SOFTCON (SW 기초교육)</h3>
-              <p class="award-organization">
-                Ajou University SW Convergence Education Center
-              </p>
-              <p class="award-date">2025.09.30</p>
-              <p class="award-level">
+            <div class="award-header">
+              <div class="award-content">
+                <h3>2025 AJOU SOFTCON (SW 기초교육)</h3>
+                <div class="award-meta">
+                  <span class="award-organization"
+                    >아주대학교 SW융합교육원</span
+                  >
+                  <span class="award-date">2025.09.30</span>
+                </div>
+              </div>
+              <div class="award-level">
                 <span class="award-badge">최우수상</span>
-              </p>
-              <div class="award-description">
-                <ul>
-                  <li>SHAP-XAI 기반 STR 보고서 자동화 시스템 설계/구현</li>
-                  <li>
-                    이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화
-                  </li>
-                </ul>
               </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>SHAP-XAI 기반 STR 보고서 자동화 시스템 설계/구현</li>
+                <li>
+                  이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화
+                </li>
+              </ul>
             </div>
           </div>
           <div class="award-card">
-            <div class="award-icon">
-              <i class="fas fa-medal"></i>
-            </div>
-            <div class="award-content">
-              <h3>2025년 제 5회 SW융합창업캠프</h3>
-              <p class="award-organization">경희대학교 SW중심대학사업단</p>
-              <p class="award-date">2025.07.05</p>
-              <p class="award-level"><span class="award-badge">우수상</span></p>
-              <div class="award-description">
-                <ul>
-                  <li>
-                    암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓'
-                    제안
-                  </li>
-                  <li>
-                    팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의
-                    전체 아키텍처 설계 주도
-                  </li>
-
-                  <li>
-                    교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정
-                    (팀명 : 파토시마이너)
-                  </li>
-                </ul>
+            <div class="award-header">
+              <div class="award-content">
+                <h3>2025년 제 5회 SW융합창업캠프</h3>
+                <div class="award-meta">
+                  <span class="award-organization"
+                    >경희대학교 SW중심대학사업단</span
+                  >
+                  <span class="award-date">2025.07.05</span>
+                </div>
               </div>
+              <div class="award-level">
+                <span class="award-badge">우수상</span>
+              </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>
+                  암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓'
+                  제안
+                </li>
+                <li>
+                  팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의
+                  전체 아키텍처 설계 주도
+                </li>
+                <li>
+                  교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정 (팀명
+                  : 파토시마이너)
+                </li>
+              </ul>
             </div>
           </div>
           <div class="award-card">
-            <div class="award-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <div class="award-content">
-              <h3>미래도서관 정책 아이디어 해커톤</h3>
-              <p class="award-organization">한국정보화진흥원 주관</p>
-              <p class="award-date">2024.04.12</p>
-              <p class="award-level">
+            <div class="award-header">
+              <div class="award-content">
+                <h3>미래도서관 정책 아이디어 해커톤</h3>
+                <div class="award-meta">
+                  <span class="award-organization">한국정보화진흥원 주관</span>
+                  <span class="award-date">2024.04.12</span>
+                </div>
+              </div>
+              <div class="award-level">
                 <span class="award-badge">입상(4등)</span>
-              </p>
-              <div class="award-description">
-                <ul>
-                  <li>고령층 디지털정보격차 데이터(NIA) 기반 3차원 군집분석</li>
-                  <li>군집별 특성에 따라 맞춤형 정책 제안 및 시각화</li>
-                </ul>
               </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>고령층 디지털정보격차 데이터(NIA) 기반 3차원 군집분석</li>
+                <li>군집별 특성에 따라 맞춤형 정책 제안 및 시각화</li>
+              </ul>
             </div>
           </div>
         </div>

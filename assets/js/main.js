@@ -1,3 +1,43 @@
+// Typography Animation - 한 글자씩 나타나기
+function animateTypography() {
+  const heroTitle = document.getElementById("heroTitle");
+  if (!heroTitle) return;
+
+  const text = heroTitle.textContent.trim();
+  heroTitle.innerHTML = "";
+
+  let charIndex = 0;
+
+  // 각 글자를 처리
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+
+    // 공백은 그대로 유지
+    if (char === " ") {
+      heroTitle.appendChild(document.createTextNode(" "));
+      continue;
+    }
+
+    const charSpan = document.createElement("span");
+    charSpan.className = "char-animate";
+
+    // 쉼표는 특별한 스타일 적용
+    if (char === ",") {
+      charSpan.className += " comma-char";
+    }
+
+    charSpan.textContent = char;
+    charSpan.style.animationDelay = `${charIndex * 0.05}s`;
+    heroTitle.appendChild(charSpan);
+    charIndex++;
+  }
+}
+
+// 페이지 로드 시 애니메이션 실행
+document.addEventListener("DOMContentLoaded", () => {
+  animateTypography();
+});
+
 // Profile Image Toggle
 const profileCard = document.getElementById("profileCard");
 const profileImage = document.getElementById("profileImage");
