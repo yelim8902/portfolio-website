@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이예림 - CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Pretendard Variable", -apple-system, BlinkMacSystemFont,
+          system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+          "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #fff;
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      @media print {
+        body {
+          padding: 20px;
+        }
+        .no-print {
+          display: none;
+        }
+        @page {
+          margin: 1cm;
+        }
+      }
+
+      .cv-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 3px solid #2c3e50;
+      }
+
+      .cv-header h1 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .cv-header .subtitle {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .contact-info span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .section {
+        margin-bottom: 35px;
+        page-break-inside: avoid;
+      }
+
+      .section-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #3498db;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .education-item,
+      .project-item,
+      .activity-item,
+      .award-item {
+        margin-bottom: 25px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .education-item::before,
+      .project-item::before,
+      .activity-item::before,
+      .award-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 8px;
+        height: 8px;
+        background: #3498db;
+        border-radius: 50%;
+      }
+
+      .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 8px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .item-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      .item-period {
+        font-size: 14px;
+        color: #7f8c8d;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .item-org {
+        font-size: 15px;
+        color: #555;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+
+      .item-description {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 10px;
+      }
+
+      .item-details {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .item-details li {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 6px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .item-details li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #3498db;
+        font-weight: bold;
+      }
+
+      .item-title a {
+        color: #2c3e50;
+        text-decoration: none;
+        border-bottom: 1px dotted #3498db;
+      }
+
+      .item-title a:hover {
+        color: #3498db;
+        border-bottom: 1px solid #3498db;
+      }
+
+      .tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .tech-tag {
+        background: #ecf0f1;
+        color: #2c3e50;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .skill-category {
+        margin-bottom: 20px;
+      }
+
+      .skill-category h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .skill-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skill-item {
+        background: #ecf0f1;
+        color: #2c3e50;
+        padding: 6px 14px;
+        border-radius: 15px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .award-badge {
+        background: #e74c3c;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .activity-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .activity-badge.active {
+        background: #27ae60;
+        color: white;
+      }
+
+      .activity-badge.completed {
+        background: #95a5a6;
+        color: white;
+      }
+
+      .print-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #3498db;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+
+      .print-button:hover {
+        background: #2980b9;
+      }
+
+      @media print {
+        .print-button {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="print-button no-print" onclick="window.print()">
+      PDF로 저장
+    </button>
+
+    <div class="cv-header">
+      <h1>이예림</h1>
+      <div class="subtitle">소프트웨어학과 & 금융공학과 복수전공</div>
+      <div class="contact-info">
+        <span>📧 yelim2849@gmail.com</span>
+        <span>📱 010-2849-8902</span>
+        <span>📍 판교, 경기도, 대한민국</span>
+        <span>🔗 github.com/yelim8902</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">아주대학교</div>
+            <div class="item-org">소프트웨어학과 재학, 금융공학과 복수전공</div>
+          </div>
+          <div class="item-period">2023 – 현재</div>
+        </div>
+        <ul class="item-details">
+          <li>C, Java, 자료구조, 알고리즘 등 기초 CS 지식 학습</li>
+          <li>Python, R, 데이터 프로그래밍 학습</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Programming</h4>
+          <div class="skill-items">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">C/C++</div>
+            <div class="skill-item">Solidity</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Database & Tools</h4>
+          <div class="skill-items">
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">AWS</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Web Development</h4>
+          <div class="skill-items">
+            <div class="skill-item">React</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Next.js</div>
+            <div class="skill-item">TypeScript</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Data & AI</h4>
+          <div class="skill-items">
+            <div class="skill-item">Pandas</div>
+            <div class="skill-item">Scikit-learn</div>
+            <div class="skill-item">LightGBM</div>
+            <div class="skill-item">SHAP</div>
+            <div class="skill-item">NumPy</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Blockchain</h4>
+          <div class="skill-items">
+            <div class="skill-item">Ethereum</div>
+            <div class="skill-item">Web3.js</div>
+            <div class="skill-item">IPFS</div>
+            <div class="skill-item">MetaMask</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-title">
+            TRACE-X – AI 기반 블록체인 자금세탁 모니터링 시스템
+          </div>
+        </div>
+        <div class="item-description">
+          블록체인 자금세탁 탐지를 위한 하이브리드 AML 시스템. 룰 기반 분석과
+          그래프 패턴 분석(PPR, Layering·Cycle·Fan-in/out)으로 도메인 지식을
+          특징화하고, Gradient Boosting으로 최종 스코어 산출. Accuracy 99.20%,
+          ROC-AUC 0.9992 달성. 실시간 분석(1~5초) 가능.
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Pandas</span>
+          <span class="tech-tag">Scikit-learn</span>
+          <span class="tech-tag">QuickNode API</span>
+          <span class="tech-tag">Etherscan API</span>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-title">XAI_AML - 의심거래 탐지 시스템</div>
+        </div>
+        <div class="item-description">
+          SHAP/LIME 기반 XAI를 활용한 금융 거래 이상탐지 및 STR 보고서 자동 생성
+          시스템
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">LightGBM</span>
+          <span class="tech-tag">SHAP</span>
+          <span class="tech-tag">Pandas</span>
+          <span class="tech-tag">Scikit-learn</span>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-title">크리스마스 롤링 페이퍼 웹 사이트</div>
+        </div>
+        <div class="item-description">
+          Next.js 14 (App Router) + Tailwind CSS + Framer Motion 기반으로
+          클레이모피즘/글래스모피즘 UI로 만든 크리스마스 트리 롤링페이퍼
+          애플리케이션입니다. 친구들과 함께 나만의 크리스마스 트리를 만들고,
+          오너먼트와 선물을 통해 따뜻한 메시지를 주고받을 수 있습니다.
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Next.js</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Tailwind CSS</span>
+          <span class="tech-tag">Framer Motion</span>
+          <span class="tech-tag">Supabase</span>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-title">Blog Study Certification Dapp (with DAO)</div>
+        </div>
+        <div class="item-description">
+          블록체인 기반 학습 인증 및 DAO 보증금 플랫폼 - 스마트 컨트랙트를 통한
+          학습 증명 & 보증금 관리 플랫폼
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Solidity</span>
+          <span class="tech-tag">Web3.js</span>
+          <span class="tech-tag">Ethereum</span>
+          <span class="tech-tag">IPFS</span>
+          <span class="tech-tag">MetaMask</span>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-title">Dividend Stock Simulation</div>
+        </div>
+        <div class="item-description">
+          배당주 투자 시뮬레이션 및 포트폴리오 최적화를 위한 데이터 분석
+          프로젝트
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Pandas</span>
+          <span class="tech-tag">NumPy</span>
+          <span class="tech-tag">Matplotlib</span>
+          <span class="tech-tag">Seaborn</span>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-title">Car-ia - P2P 카셰어링 플랫폼</div>
+        </div>
+        <div class="item-description">
+          블록체인 기반 P2P 카셰어링 플랫폼 기획 및 프론트엔드 구현, 원화
+          스테이블코인 결제 구조 설계
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Blockchain</span>
+          <span class="tech-tag">Stablecoin</span>
+          <span class="tech-tag">Frontend</span>
+          <span class="tech-tag">P2P</span>
+          <span class="tech-tag">React</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Activities</h2>
+
+      <div class="activity-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">연세대 블록체인 소학회 Bay 16기</div>
+            <div class="item-org">연세대학교 소학회 Bay</div>
+          </div>
+          <div>
+            <span class="item-period">2025.07 ~ 진행</span>
+            <span class="activity-badge active">진행중</span>
+          </div>
+        </div>
+        <ul class="item-details">
+          <li>크립토 모니터링 세션 리드</li>
+          <li>DeFi/AML 최신 동향 연구 및 학술 교류</li>
+          <li>블록체인 컨트랙트 개발 및 운영, 해커톤 참여</li>
+        </ul>
+      </div>
+
+      <div class="activity-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Paletting – 가치관 기반 소개팅 플랫폼</div>
+            <div class="item-org">창업자 & 기획 리더 | 개인 창업</div>
+          </div>
+          <div>
+            <span class="item-period">2023.08 ~ 2023.12</span>
+            <span class="activity-badge completed">2023.12</span>
+          </div>
+        </div>
+        <ul class="item-details">
+          <li>가치관 설문 데이터를 활용한 매칭 알고리즘 기획</li>
+          <li>SNS 마케팅으로 150명+ 사용자 확보</li>
+          <li>4인 팀 리딩, 서비스 기획·디자인·운영 총괄</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Awards</h2>
+
+      <div class="award-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">
+              <a
+                href="https://softcon.ajou.ac.kr/works/works.asp?uid=2250"
+                target="_blank"
+                rel="noopener"
+                >2025-2 AJOU SOFTCON 연구부문</a
+              >
+            </div>
+            <div class="item-org">아주대학교 SW융합교육원</div>
+          </div>
+          <div>
+            <span class="item-period">2025.12.04</span>
+            <span class="award-badge">우수상</span>
+          </div>
+        </div>
+        <ul class="item-details">
+          <li>
+            Rule-Based Scoring과 Graph Pattern Analysis를 통합한 2단계
+            하이브리드 블록체인 AML 탐지 시스템
+          </li>
+        </ul>
+      </div>
+
+      <div class="award-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">
+              <a
+                href="https://github.com/yelim8902/XAI_AML"
+                target="_blank"
+                rel="noopener"
+                >2025 AJOU SOFTCON (SW 기초교육)</a
+              >
+            </div>
+            <div class="item-org">아주대학교 SW융합교육원</div>
+          </div>
+          <div>
+            <span class="item-period">2025.09.30</span>
+            <span class="award-badge">최우수상</span>
+          </div>
+        </div>
+        <ul class="item-details">
+          <li>SHAP-XAI 기반 STR 보고서 자동화 시스템 설계/구현</li>
+          <li>이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화</li>
+        </ul>
+      </div>
+
+      <div class="award-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">2025년 제 5회 SW융합창업캠프</div>
+            <div class="item-org">경희대학교 SW중심대학사업단</div>
+          </div>
+          <div>
+            <span class="item-period">2025.07.05</span>
+            <span class="award-badge">우수상</span>
+          </div>
+        </div>
+        <ul class="item-details">
+          <li>
+            암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓' 제안
+          </li>
+          <li>
+            팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의 전체
+            아키텍처 설계 주도
+          </li>
+          <li>
+            교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정 (팀명 :
+            파토시마이너)
+          </li>
+        </ul>
+      </div>
+
+      <div class="award-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">미래도서관 정책 아이디어 해커톤</div>
+            <div class="item-org">한국정보화진흥원 주관</div>
+          </div>
+          <div>
+            <span class="item-period">2024.04.12</span>
+            <span class="award-badge">입상(4등)</span>
+          </div>
+        </div>
+        <ul class="item-details">
+          <li>고령층 디지털정보격차 데이터(NIA) 기반 3차원 군집분석</li>
+          <li>군집별 특성에 따라 맞춤형 정책 제안 및 시각화</li>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      // Print functionality
+      function printCV() {
+        window.print();
+      }
+    </script>
+  </body>
+</html>
