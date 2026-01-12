@@ -1018,6 +1018,17 @@ section {
   letter-spacing: -0.02em;
 }
 
+.award-content h3 a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.award-content h3 a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 .award-meta {
   display: flex;
   flex-direction: column;
