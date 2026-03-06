@@ -58,7 +58,7 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <a href="#home">이예림(진강이)</a>
+          <a href="#home">이예림</a>
         </div>
         <ul class="nav-menu">
           <li class="nav-item">
@@ -68,10 +68,10 @@
             <a href="#about" class="nav-link">소개</a>
           </li>
           <li class="nav-item">
-            <a href="#skills" class="nav-link">기술</a>
+            <a href="#projects" class="nav-link">프로젝트</a>
           </li>
           <li class="nav-item">
-            <a href="#projects" class="nav-link">프로젝트</a>
+            <a href="#skills" class="nav-link">기술</a>
           </li>
           <li class="nav-item">
             <a href="#activities" class="nav-link">활동</a>
@@ -95,54 +95,39 @@
     <section id="home" class="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <h1 class="hero-title">
-            안녕하세요<span class="comma">,</span><br />
-            이예림입니다.
-          </h1>
-          <p class="hero-subtitle">기술과 금융을 연결하는 빌더(Builder)</p>
-          <p class="hero-description">
-            소프트웨어와 금융공학을 함께 전공중인 학생입니다. 배운 것을 저만의
-            언어로 블로그에 풀어내는 것을 좋아합니다. 블록체인과 데이터 분야에
-            관심이 많습니다.
-          </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
-            <a href="#contact" class="btn btn-secondary">연락하기</a>
+          <h1 class="hero-title" id="heroTitle">안녕하세요, 이예림입니다.</h1>
+          <div class="hero-keywords">
+            <span class="keyword-tag">
+              <i class="fas fa-link"></i>
+              <span>블록체인</span>
+            </span>
+            <span class="keyword-tag">
+              <i class="fas fa-brain"></i>
+              <span>AI</span>
+            </span>
+            <span class="keyword-tag">
+              <i class="fas fa-shield-alt"></i>
+              <span>보안</span>
+            </span>
+            <span class="keyword-tag">
+              <i class="fas fa-wallet"></i>
+              <span>금융</span>
+            </span>
           </div>
         </div>
         <div class="hero-image">
-          <div class="profile-cards">
-            <div class="profile-card main-photo">
-              <div class="profile-image">
-                <img
-                  src="assets/images/profile-main.jpg?v=2"
-                  alt="프로필 사진"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <i class="fas fa-code"></i>
-                    <span>Tech</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="profile-card finance-photo">
-              <div class="profile-image">
-                <img
-                  src="assets/images/profile-finance.jpg?v=2"
-                  alt="금융 전문가"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div class="image-overlay">
-                  <div class="overlay-content">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Finance</span>
-                  </div>
-                </div>
-              </div>
+          <div class="profile-card-stack">
+            <div class="profile-card-layer layer-3"></div>
+            <div class="profile-card-layer layer-2"></div>
+            <div class="profile-card-layer layer-1" id="profileCard">
+              <img
+                src="assets/images/profile-main.jpg?v=2"
+                alt="프로필 사진"
+                loading="lazy"
+                decoding="async"
+                class="hero-profile-image"
+                id="profileImage"
+              />
             </div>
           </div>
         </div>
@@ -161,11 +146,10 @@
         <div class="about-content">
           <div class="about-text">
             <div class="intro-text">
-              <h3 class="text-primary">해상도가 높은 사람이 되고 싶습니다.</h3>
               <p>
-                무엇을 하든 문제의 본질부터 탐구하는 것을 좋아합니다. <br />
-                문제의 본질을 먼저 보고 데이터로 검증합니다. 기술과 금융을 잇는
-                문제를 정의하고, 실험하고, 구현합니다.
+                소프트웨어와 금융공학을 함께 전공중인 학생입니다. 배운 것을
+                저만의 언어로 블로그에 풀어내는 것을 좋아합니다. 블록체인과
+                데이터 분야에 관심이 많습니다.
               </p>
             </div>
 
@@ -224,12 +208,20 @@
               <div class="project-overlay">
                 <div class="project-links">
                   <a
-                    href="https://zingangyyy.tistory.com/41"
+                    href="https://softcon.ajou.ac.kr/works/works.asp?uid=2250"
                     class="project-link"
                     target="_blank"
                     rel="noopener"
-                    aria-label="Project blog post"
-                    ><i class="fas fa-blog"></i
+                    aria-label="SOFTCON project page"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://youtu.be/dbo9gwlLPCw?si=CpjZ08XL4CHavET_"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="YouTube video"
+                    ><i class="fab fa-youtube"></i
                   ></a>
                   <a
                     href="https://github.com/paran-needless-to-say/MPOcryptoML"
@@ -243,13 +235,13 @@
               </div>
             </div>
             <div class="project-content">
-              <h3>
-                TRACE-X – AI 기반 블록체인 자금세탁 모니터링 시스템 (진행중)
-              </h3>
+              <h3>TRACE-X – AI 기반 블록체인 자금세탁 모니터링 시스템</h3>
               <p>
-                멀티체인 가상자산 거래를 분석해 이상 거래를 실시간 탐지하고,
-                탐지 근거를 설명하는 AI 모니터링 솔루션.<br />
-                MPOCryptoML 기반 논문 재현 및 확장중
+                블록체인 자금세탁 탐지를 위한 하이브리드 AML 시스템. 룰 기반
+                분석과 그래프 패턴 분석(PPR, Layering·Cycle·Fan-in/out)으로
+                도메인 지식을 특징화하고, Gradient Boosting으로 최종 스코어
+                산출. Accuracy 99.20%, ROC-AUC 0.9992 달성. 실시간 분석(1~5초)
+                가능.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Python</span>
@@ -257,6 +249,39 @@
                 <span class="tech-tag">Scikit-learn</span>
                 <span class="tech-tag">QuickNode API</span>
                 <span class="tech-tag">Etherscan API</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image xmas-bg">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/yelim8902/X-mas"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub repository"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>크리스마스 롤링 페이퍼 웹 사이트</h3>
+              <p>
+                Next.js 14 (App Router) + Tailwind CSS + Framer Motion 기반으로
+                클레이모피즘/글래스모피즘 UI로 만든 크리스마스 트리 롤링페이퍼
+                애플리케이션입니다. 친구들과 함께 나만의 크리스마스 트리를
+                만들고, 오너먼트와 선물을 통해 따뜻한 메시지를 주고받을 수
+                있습니다.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Framer Motion</span>
+                <span class="tech-tag">Supabase</span>
               </div>
             </div>
           </div>
@@ -384,48 +409,37 @@
         </div>
         <div class="skills-grid">
           <div class="skill-category">
-            <h3>Frontend</h3>
-            <div class="skill-items">
-              <div class="skill-item">HTML5</div>
-              <div class="skill-item">CSS3</div>
-              <div class="skill-item">JavaScript</div>
-              <div class="skill-item">React</div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Data Analysis</h3>
+            <h3>Programming</h3>
             <div class="skill-items">
               <div class="skill-item">Python</div>
-              <div class="skill-item">Pandas</div>
-              <div class="skill-item">NumPy</div>
-              <div class="skill-item">Scikit-learn</div>
-              <div class="skill-item">Matplotlib</div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Blockchain</h3>
-            <div class="skill-items">
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">Java</div>
+              <div class="skill-item">C/C++</div>
               <div class="skill-item">Solidity</div>
-              <div class="skill-item">Ethereum</div>
-              <div class="skill-item">Web3.js</div>
-              <div class="skill-item">MetaMask</div>
-              <div class="skill-item">IPFS</div>
             </div>
           </div>
           <div class="skill-category">
-            <h3>Tools</h3>
+            <h3>Database & Tools</h3>
             <div class="skill-items">
+              <div class="skill-item">MySQL</div>
               <div class="skill-item">Git</div>
               <div class="skill-item">GitHub</div>
-              <div class="skill-item">Notion</div>
+              <div class="skill-item">AWS</div>
             </div>
           </div>
           <div class="skill-category">
-            <h3>Design & Marketing</h3>
+            <h3>Web Development</h3>
+            <div class="skill-items">
+              <div class="skill-item">React</div>
+              <div class="skill-item">HTML/CSS</div>
+              <div class="skill-item">Node.js</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Design</h3>
             <div class="skill-items">
               <div class="skill-item">Photoshop</div>
               <div class="skill-item">Illustrator</div>
-              <div class="skill-item">Premiere Pro</div>
               <div class="skill-item">Figma</div>
             </div>
           </div>
@@ -441,49 +455,23 @@
         </div>
         <div class="activities-timeline">
           <div class="activity-timeline-item">
-            <div class="activity-badge active">
-              <i class="fas fa-rocket"></i>
-              <span class="activity-year">진행중</span>
+            <div class="activity-header">
+              <div class="activity-timeline-details">
+                <h3>연세대 블록체인 소학회 Bay 16기</h3>
+                <p class="activity-org">
+                  연세대학교 소학회 Bay | 2025.07 ~ 진행
+                </p>
+              </div>
+              <div class="activity-badge active">
+                <i class="fas fa-rocket"></i>
+                <span class="activity-year">진행중</span>
+              </div>
             </div>
-            <div class="activity-line"></div>
-            <div class="activity-timeline-details">
-              <h3>연세대 블록체인 소학회 Bay 16기</h3>
-              <p class="activity-org">연세대학교 소학회 Bay | 2025.07 ~ 진행</p>
-              <ul class="activity-points">
-                <li>DeFi/AML 최신 동향 연구 및 학술 교류</li>
-                <li>블록체인 컨트랙트 개발 및 운영,해커톤 참여</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="activity-timeline-item">
-            <div class="activity-badge active">
-              <i class="fas fa-code"></i>
-              <span class="activity-year">진행중</span>
-            </div>
-            <div class="activity-line"></div>
-            <div class="activity-timeline-details">
-              <h3>
-                블록체인 자금거래 모니터링 시스템 구축<br />– 이상거래
-                탐지/리스크 스코어링 AI
-              </h3>
-              <p class="activity-org">아주대학교 파란학기 | 2025.07 ~ 진행</p>
-              <ul class="activity-points">
-                <li>국제 규제(FATF, 특금법) 기반 AML 정책 모듈 구조 설계</li>
-                <li>
-                  이상거래 탐지/리스크 스코어링 AI 담당 — 다중 패턴 기반 모델
-                  (MPOCryptoML) 재현 및 적용
-                </li>
-                <li>
-                  단일체인을 넘어 멀티체인/크로스체인 거래 추적 및 탐지 고도화
-                </li>
-                <li>
-                  블랙박스형 모델 지양, 피처 엔지니어링으로 탐지 근거 설명 가능
-                  구조
-                </li>
-                <li>라벨 부족 환경에서 준지도 학습으로 성능 확보</li>
-              </ul>
-            </div>
+            <ul class="activity-points">
+              <li>크립토 모니터링 세션 리드</li>
+              <li>DeFi/AML 최신 동향 연구 및 학술 교류</li>
+              <li>블록체인 컨트랙트 개발 및 운영,해커톤 참여</li>
+            </ul>
           </div>
 
           <div class="activity-timeline-item">
@@ -507,6 +495,11 @@
                 </li>
               </ul>
             </div>
+            <ul class="activity-points">
+              <li>가치관 설문 데이터를 활용한 매칭 알고리즘 기획</li>
+              <li>SNS 마케팅으로 150명+ 사용자 확보</li>
+              <li>4인 팀 리딩, 서비스 기획·디자인·운영 총괄</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -520,73 +513,117 @@
         </div>
         <div class="awards-grid">
           <div class="award-card">
-            <div class="award-icon">
-              <i class="fas fa-trophy"></i>
-            </div>
-            <div class="award-content">
-              <h3>미래도서관 정책 아이디어 해커톤</h3>
-              <p class="award-organization">한국정보화진흥원 주관</p>
-              <p class="award-date">2024.04.12</p>
-              <p class="award-level">
-                <span class="award-badge">입상(4등)</span>
-              </p>
-              <div class="award-description">
-                <ul>
-                  <li>고령층 디지털정보격차 데이터(NIA) 기반 3차원 군집분석</li>
-                  <li>군집별 특성에 따라 맞춤형 정책 제안 및 시각화</li>
-                </ul>
+            <div class="award-header">
+              <div class="award-content">
+                <h3>
+                  <a
+                    href="https://softcon.ajou.ac.kr/works/works.asp?uid=2250"
+                    target="_blank"
+                    rel="noopener"
+                    >2025-2 AJOU SOFTCON 연구부문</a
+                  >
+                </h3>
+                <div class="award-meta">
+                  <span class="award-organization"
+                    >아주대학교 SW융합교육원</span
+                  >
+                  <span class="award-date">2025.12.04</span>
+                </div>
               </div>
+              <div class="award-level">
+                <span class="award-badge">우수상</span>
+              </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>
+                  Rule-Based Scoring과 Graph Pattern Analysis를 통합한 2단계
+                  하이브리드 블록체인 AML 탐지 시스템
+                </li>
+              </ul>
             </div>
           </div>
           <div class="award-card">
-            <div class="award-icon">
-              <i class="fas fa-medal"></i>
-            </div>
-            <div class="award-content">
-              <h3>2025년 제 5회 SW융합창업캠프</h3>
-              <p class="award-organization">경희대학교 SW중심대학사업단</p>
-              <p class="award-date">2025.07.05</p>
-              <p class="award-level"><span class="award-badge">우수상</span></p>
-              <div class="award-description">
-                <ul>
-                  <li>
-                    암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓'
-                    제안
-                  </li>
-                  <li>
-                    팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의
-                    전체 아키텍처 설계 주도
-                  </li>
-
-                  <li>
-                    교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정
-                    (팀명 : 파토시마이너)
-                  </li>
-                </ul>
+            <div class="award-header">
+              <div class="award-content">
+                <h3>
+                  <a
+                    href="https://github.com/yelim8902/XAI_AML"
+                    target="_blank"
+                    rel="noopener"
+                    >2025 AJOU SOFTCON (SW 기초교육)</a
+                  >
+                </h3>
+                <div class="award-meta">
+                  <span class="award-organization"
+                    >아주대학교 SW융합교육원</span
+                  >
+                  <span class="award-date">2025.09.30</span>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="award-card">
-            <div class="award-icon">
-              <i class="fas fa-award"></i>
-            </div>
-            <div class="award-content">
-              <h3>2025 AJOU SOFTCON (SW 기초교육)</h3>
-              <p class="award-organization">
-                Ajou University SW Convergence Education Center
-              </p>
-              <p class="award-date">2025.09.30</p>
-              <p class="award-level">
+              <div class="award-level">
                 <span class="award-badge">최우수상</span>
-              </p>
-              <div class="award-description">
-                <ul>
-                  <li>SHAP-XAI 기반 STR 보고서 자동화 시스템 설계/구현</li>
-                  <li>
-                    이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화
-                  </li>
-                </ul>
               </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>SHAP-XAI 기반 STR 보고서 자동화 시스템 설계/구현</li>
+                <li>
+                  이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-header">
+              <div class="award-content">
+                <h3>2025년 제 5회 SW융합창업캠프</h3>
+                <div class="award-meta">
+                  <span class="award-organization"
+                    >경희대학교 SW중심대학사업단</span
+                  >
+                  <span class="award-date">2025.07.05</span>
+                </div>
+              </div>
+              <div class="award-level">
+                <span class="award-badge">우수상</span>
+              </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>
+                  암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓'
+                  제안
+                </li>
+                <li>
+                  팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의
+                  전체 아키텍처 설계 주도
+                </li>
+                <li>
+                  교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정 (팀명
+                  : 파토시마이너)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-header">
+              <div class="award-content">
+                <h3>미래도서관 정책 아이디어 해커톤</h3>
+                <div class="award-meta">
+                  <span class="award-organization">한국정보화진흥원 주관</span>
+                  <span class="award-date">2024.04.12</span>
+                </div>
+              </div>
+              <div class="award-level">
+                <span class="award-badge">입상(4등)</span>
+              </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>고령층 디지털정보격차 데이터(NIA) 기반 3차원 군집분석</li>
+                <li>군집별 특성에 따라 맞춤형 정책 제안 및 시각화</li>
+              </ul>
             </div>
           </div>
         </div>

@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "scripts": {
+    "dev": "npx http-server -p 8080 -o",
+    "start": "npx http-server -p 8080 -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
