@@ -555,6 +555,13 @@ body.loaded {
   animation-delay: 0s;
 }
 
+.chip-middle {
+  top: 50%;
+  right: -28px;
+  transform: translateY(-50%);
+  animation-delay: 0.8s;
+}
+
 .chip-bottom {
   bottom: 40px;
   left: -24px;
