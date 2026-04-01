@@ -52,7 +52,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --color-bg: #0d1117;
     --color-surface: #161b22;
     --color-surface-alt: #1c2330;
@@ -69,6 +69,24 @@
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
     --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.45);
   }
+}
+
+html[data-theme="dark"] {
+  --color-bg: #0d1117;
+  --color-surface: #161b22;
+  --color-surface-alt: #1c2330;
+  --color-text: #e6edf3;
+  --color-text-secondary: #adbac7;
+  --color-muted: #768390;
+  --color-primary: #4aa3ff;
+  --color-primary-700: #2d7bd6;
+  --color-primary-tint: rgba(74, 163, 255, 0.10);
+  --color-accent: #3dd68c;
+  --color-footer-bg: #010409;
+  --color-border: rgba(255, 255, 255, 0.07);
+  --color-border-strong: rgba(255, 255, 255, 0.14);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.45);
 }
 /* Reset and Base Styles */
 * {
@@ -208,6 +226,26 @@ body.loaded {
 
 .nav-link.active::after {
   width: 100%;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1.5px solid var(--color-border-strong);
+  border-radius: var(--radius-full);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .hamburger {

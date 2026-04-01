@@ -1,3 +1,37 @@
+// Dark mode toggle
+(function () {
+  const html = document.documentElement;
+  const saved = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (saved === "dark" || (!saved && prefersDark)) {
+    html.setAttribute("data-theme", "dark");
+  } else if (saved === "light") {
+    html.setAttribute("data-theme", "light");
+  }
+})();
+
+function initThemeToggle() {
+  const btn = document.getElementById("themeToggle");
+  const icon = document.getElementById("themeIcon");
+  if (!btn || !icon) return;
+
+  function updateIcon() {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    icon.className = isDark ? "fas fa-sun" : "fas fa-moon";
+  }
+
+  updateIcon();
+
+  btn.addEventListener("click", () => {
+    const html = document.documentElement;
+    const isDark = html.getAttribute("data-theme") === "dark";
+    html.setAttribute("data-theme", isDark ? "light" : "dark");
+    localStorage.setItem("theme", isDark ? "light" : "dark");
+    updateIcon();
+  });
+}
+
 // Typography Animation - 한 글자씩 나타나기
 function animateTypography() {
   const heroTitle = document.getElementById("heroTitle");
@@ -36,6 +70,7 @@ function animateTypography() {
 // 페이지 로드 시 애니메이션 실행
 document.addEventListener("DOMContentLoaded", () => {
   animateTypography();
+  initThemeToggle();
 });
 
 // Profile Image Toggle
