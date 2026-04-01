@@ -77,10 +77,10 @@
             <a href="#skills" class="nav-link">기술</a>
           </li>
           <li class="nav-item">
-            <a href="#activities" class="nav-link">활동</a>
+            <a href="#awards" class="nav-link">수상경력</a>
           </li>
           <li class="nav-item">
-            <a href="#awards" class="nav-link">수상경력</a>
+            <a href="#activities" class="nav-link">활동</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link">연락처</a>
@@ -166,8 +166,9 @@
         <div class="section-header">
           <h2 class="section-title">About</h2>
         </div>
-        <div class="about-content">
-          <div class="about-text">
+        <div class="about-grid">
+          <!-- 왼쪽 컬럼 -->
+          <div class="about-left">
             <div class="intro-text">
               <p>
                 소프트웨어와 금융공학을 함께 전공중인 학생입니다. 배운 것을
@@ -176,6 +177,46 @@
               </p>
             </div>
 
+            <div class="simple-section">
+              <h4 class="simple-title">Education</h4>
+              <div class="simple-item">
+                <div class="simple-period">2023 – 현재</div>
+                <div class="simple-content">
+                  <h5>아주대학교</h5>
+                  <p>소프트웨어학과 재학, 금융공학과 복수전공</p>
+                  <ul class="simple-details">
+                    <li>C, Java, 자료구조, 알고리즘 등 기초 CS 지식 학습</li>
+                    <li>Python, R, 데이터 프로그래밍 학습</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="simple-section">
+              <h4 class="simple-title">Blog</h4>
+              <div class="blog-links">
+                <a href="https://zingangyyy.tistory.com/" class="simple-blog-link" target="_blank">
+                  <span class="blog-icon"><i class="fas fa-pen-to-square"></i></span>
+                  <span class="blog-info">
+                    <span class="blog-name">진강이의 성장일지</span>
+                    <span class="blog-desc-small">기술 · 경제</span>
+                  </span>
+                  <span class="blog-platform">티스토리 →</span>
+                </a>
+                <a href="https://blog.naver.com/lyl2849" class="simple-blog-link" target="_blank">
+                  <span class="blog-icon"><i class="fas fa-book-open"></i></span>
+                  <span class="blog-info">
+                    <span class="blog-name">진강이의 서랍</span>
+                    <span class="blog-desc-small">일상 · 생각</span>
+                  </span>
+                  <span class="blog-platform">네이버 →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 오른쪽 컬럼 -->
+          <div class="about-right">
             <div class="about-stats">
               <div class="about-stat">
                 <span class="about-stat-number">5</span>
@@ -192,22 +233,6 @@
               <div class="about-stat">
                 <span class="about-stat-number">10+</span>
                 <span class="about-stat-label">프로젝트</span>
-              </div>
-            </div>
-
-            <div class="simple-section">
-              <h4 class="simple-title">Education</h4>
-
-              <div class="simple-item">
-                <div class="simple-period">2023 – 현재</div>
-                <div class="simple-content">
-                  <h5>아주대학교</h5>
-                  <p>소프트웨어학과 재학, 금융공학과 복수전공</p>
-                  <ul class="simple-details">
-                    <li>C, Java, 자료구조, 알고리즘 등 기초 CS 지식 학습</li>
-                    <li>Python, R, 데이터 프로그래밍 학습</li>
-                  </ul>
-                </div>
               </div>
             </div>
 
@@ -235,37 +260,6 @@
                     <p>Paletting 창업 · 아주대학교 소프트웨어 × 금융공학 입학</p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="simple-section">
-              <h4 class="simple-title">Blog</h4>
-
-              <div class="blog-links">
-                <a
-                  href="https://zingangyyy.tistory.com/"
-                  class="simple-blog-link"
-                  target="_blank"
-                >
-                  <span class="blog-icon"><i class="fas fa-pen-to-square"></i></span>
-                  <span class="blog-info">
-                    <span class="blog-name">진강이의 성장일지</span>
-                    <span class="blog-desc-small">기술 · 경제</span>
-                  </span>
-                  <span class="blog-platform">티스토리 →</span>
-                </a>
-                <a
-                  href="https://blog.naver.com/lyl2849"
-                  class="simple-blog-link"
-                  target="_blank"
-                >
-                  <span class="blog-icon"><i class="fas fa-book-open"></i></span>
-                  <span class="blog-info">
-                    <span class="blog-name">진강이의 서랍</span>
-                    <span class="blog-desc-small">일상 · 생각</span>
-                  </span>
-                  <span class="blog-platform">네이버 →</span>
-                </a>
               </div>
             </div>
           </div>
@@ -524,6 +518,141 @@
       </div>
     </section>
 
+    <!-- Awards Section -->
+    <section id="awards" class="awards">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Awards</h2>
+        </div>
+        <div class="awards-grid">
+          <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/자주연_썸네일.jpg" alt="2025-2 AJOU SOFTCON 연구부문 수상" loading="lazy" />
+            </div>
+            <div class="award-header">
+              <div class="award-content">
+                <h3>
+                  <a
+                    href="https://softcon.ajou.ac.kr/works/works.asp?uid=2250"
+                    target="_blank"
+                    rel="noopener"
+                    >2025-2 AJOU SOFTCON 연구부문</a
+                  >
+                </h3>
+                <div class="award-meta">
+                  <span class="award-organization">아주대학교 SW융합교육원</span>
+                  <span class="award-date">2025.12.04</span>
+                </div>
+              </div>
+              <div class="award-level">
+                <span class="award-badge">우수상</span>
+              </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>Rule-Based Scoring과 Graph Pattern Analysis를 통합한 2단계 하이브리드 블록체인 AML 탐지 시스템</li>
+              </ul>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/SW기초교육_소프트콘_수상.jpg" alt="2025 AJOU SOFTCON SW기초교육 수상" loading="lazy" />
+            </div>
+            <div class="award-header">
+              <div class="award-content">
+                <h3>
+                  <a href="https://github.com/yelim8902/XAI_AML" target="_blank" rel="noopener"
+                    >2025 AJOU SOFTCON (SW 기초교육)</a>
+                </h3>
+                <div class="award-meta">
+                  <span class="award-organization">아주대학교 SW융합교육원</span>
+                  <span class="award-date">2025.09.30</span>
+                </div>
+              </div>
+              <div class="award-level">
+                <span class="award-badge">최우수상</span>
+              </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>SHAP-XAI 기반 STR 보고서 자동화 시스템 설계/구현</li>
+                <li>이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화</li>
+              </ul>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/파토시마이너_인증서.jpeg" alt="SW융합창업캠프 우수상" loading="lazy" />
+            </div>
+            <div class="award-header">
+              <div class="award-content">
+                <h3>2025년 제 5회 SW융합창업캠프</h3>
+                <div class="award-meta">
+                  <span class="award-organization">경희대학교 SW중심대학사업단</span>
+                  <span class="award-date">2025.07.05</span>
+                </div>
+              </div>
+              <div class="award-level">
+                <span class="award-badge">우수상</span>
+              </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓' 제안</li>
+                <li>팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의 전체 아키텍처 설계 주도</li>
+                <li>교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정 (팀명: 파토시마이너)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/6.2024미래도서관정책아이디어해커톤_입상.jpg" alt="미래도서관 정책 아이디어 해커톤 입상" loading="lazy" />
+            </div>
+            <div class="award-header">
+              <div class="award-content">
+                <h3>미래도서관 정책 아이디어 해커톤</h3>
+                <div class="award-meta">
+                  <span class="award-organization">한국정보화진흥원 주관</span>
+                  <span class="award-date">2024.04.12</span>
+                </div>
+              </div>
+              <div class="award-level">
+                <span class="award-badge">입상(4등)</span>
+              </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>고령층 디지털정보격차 데이터(NIA) 기반 3차원 군집분석</li>
+                <li>군집별 특성에 따라 맞춤형 정책 제안 및 시각화</li>
+              </ul>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/파란학기2.JPG" alt="파란학기제 말해뭐해 팀 입상" loading="lazy" />
+            </div>
+            <div class="award-header">
+              <div class="award-content">
+                <h3>2026-2 파란학기제 말해뭐해 팀</h3>
+                <div class="award-meta">
+                  <span class="award-organization">아주대학교 교무혁신처장 장우진</span>
+                  <span class="award-date">2025.12.11</span>
+                </div>
+              </div>
+              <div class="award-level">
+                <span class="award-badge">입상</span>
+              </div>
+            </div>
+            <div class="award-description">
+              <ul>
+                <li>도전과제: Cross-Chain Stablecoin Pre-Detection Service Trace-X</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Activities Section -->
     <section id="activities" class="activities">
       <div class="container">
@@ -627,165 +756,6 @@
             </ul>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards" class="awards">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Awards</h2>
-        </div>
-        <div class="awards-grid">
-          <div class="award-card">
-            <div class="award-image">
-              <img src="assets/images/자주연_썸네일.jpg" alt="2025-2 AJOU SOFTCON 연구부문 수상" loading="lazy" />
-            </div>
-            <div class="award-header">
-              <div class="award-content">
-                <h3>
-                  <a
-                    href="https://softcon.ajou.ac.kr/works/works.asp?uid=2250"
-                    target="_blank"
-                    rel="noopener"
-                    >2025-2 AJOU SOFTCON 연구부문</a
-                  >
-                </h3>
-                <div class="award-meta">
-                  <span class="award-organization"
-                    >아주대학교 SW융합교육원</span
-                  >
-                  <span class="award-date">2025.12.04</span>
-                </div>
-              </div>
-              <div class="award-level">
-                <span class="award-badge">우수상</span>
-              </div>
-            </div>
-            <div class="award-description">
-              <ul>
-                <li>
-                  Rule-Based Scoring과 Graph Pattern Analysis를 통합한 2단계
-                  하이브리드 블록체인 AML 탐지 시스템
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="award-card">
-            <div class="award-image">
-              <img src="assets/images/SW기초교육_소프트콘_수상.jpg" alt="2025 AJOU SOFTCON SW기초교육 수상" loading="lazy" />
-            </div>
-            <div class="award-header">
-              <div class="award-content">
-                <h3>
-                  <a
-                    href="https://github.com/yelim8902/XAI_AML"
-                    target="_blank"
-                    rel="noopener"
-                    >2025 AJOU SOFTCON (SW 기초교육)</a
-                  >
-                </h3>
-                <div class="award-meta">
-                  <span class="award-organization"
-                    >아주대학교 SW융합교육원</span
-                  >
-                  <span class="award-date">2025.09.30</span>
-                </div>
-              </div>
-              <div class="award-level">
-                <span class="award-badge">최우수상</span>
-              </div>
-            </div>
-            <div class="award-description">
-              <ul>
-                <li>SHAP-XAI 기반 STR 보고서 자동화 시스템 설계/구현</li>
-                <li>
-                  이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="award-card">
-            <div class="award-image">
-              <img src="assets/images/파토시마이너_인증서.jpeg" alt="SW융합창업캠프 우수상" loading="lazy" />
-            </div>
-            <div class="award-header">
-              <div class="award-content">
-                <h3>2025년 제 5회 SW융합창업캠프</h3>
-                <div class="award-meta">
-                  <span class="award-organization"
-                    >경희대학교 SW중심대학사업단</span
-                  >
-                  <span class="award-date">2025.07.05</span>
-                </div>
-              </div>
-              <div class="award-level">
-                <span class="award-badge">우수상</span>
-              </div>
-            </div>
-            <div class="award-description">
-              <ul>
-                <li>
-                  암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓'
-                  제안
-                </li>
-                <li>
-                  팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의
-                  전체 아키텍처 설계 주도
-                </li>
-                <li>
-                  교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정 (팀명
-                  : 파토시마이너)
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="award-card">
-            <div class="award-image">
-              <img src="assets/images/6.2024미래도서관정책아이디어해커톤_입상.jpg" alt="미래도서관 정책 아이디어 해커톤 입상" loading="lazy" />
-            </div>
-            <div class="award-header">
-              <div class="award-content">
-                <h3>미래도서관 정책 아이디어 해커톤</h3>
-                <div class="award-meta">
-                  <span class="award-organization">한국정보화진흥원 주관</span>
-                  <span class="award-date">2024.04.12</span>
-                </div>
-              </div>
-              <div class="award-level">
-                <span class="award-badge">입상(4등)</span>
-              </div>
-            </div>
-            <div class="award-description">
-              <ul>
-                <li>고령층 디지털정보격차 데이터(NIA) 기반 3차원 군집분석</li>
-                <li>군집별 특성에 따라 맞춤형 정책 제안 및 시각화</li>
-              </ul>
-            </div>
-          </div>
-          <div class="award-card">
-            <div class="award-image">
-              <img src="assets/images/파란학기2.JPG" alt="파란학기제 말해뭐해 팀 입상" loading="lazy" />
-            </div>
-            <div class="award-header">
-              <div class="award-content">
-                <h3>2026-2 파란학기제 말해뭐해 팀</h3>
-                <div class="award-meta">
-                  <span class="award-organization">아주대학교 교무혁신처장 장우진</span>
-                  <span class="award-date">2025.12.11</span>
-                </div>
-              </div>
-              <div class="award-level">
-                <span class="award-badge">입상</span>
-              </div>
-            </div>
-            <div class="award-description">
-              <ul>
-                <li>도전과제: Cross-Chain Stablecoin Pre-Detection Service Trace-X</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section>
