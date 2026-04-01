@@ -77,10 +77,10 @@
             <a href="#skills" class="nav-link">기술</a>
           </li>
           <li class="nav-item">
-            <a href="#activities" class="nav-link">활동</a>
+            <a href="#awards" class="nav-link">수상경력</a>
           </li>
           <li class="nav-item">
-            <a href="#awards" class="nav-link">수상경력</a>
+            <a href="#activities" class="nav-link">활동</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link">연락처</a>
@@ -132,7 +132,7 @@
             <div class="profile-card-layer layer-2"></div>
             <div class="profile-card-layer layer-1" id="profileCard">
               <img
-                src="assets/images/profile-main.jpg?v=2"
+                src="assets/images/이예림.jpg"
                 alt="프로필 사진"
                 loading="lazy"
                 decoding="async"
@@ -166,19 +166,20 @@
         <div class="section-header">
           <h2 class="section-title">About</h2>
         </div>
-        <div class="about-content">
-          <div class="about-text">
-            <div class="intro-text">
-              <p>
-                소프트웨어와 금융공학을 함께 전공중인 학생입니다. 배운 것을
-                저만의 언어로 블로그에 풀어내는 것을 좋아합니다. 블록체인과
-                데이터 분야에 관심이 많습니다.
-              </p>
-            </div>
+        <div class="intro-text about-intro-full">
+          <p>
+            소프트웨어와 금융공학을 함께 전공중인 학생입니다. 배운 것을
+            저만의 언어로 블로그에 풀어내는 것을 좋아합니다. 블록체인과
+            데이터 분야에 관심이 많습니다.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- 왼쪽 컬럼 -->
+          <div class="about-left">
 
             <div class="simple-section">
               <h4 class="simple-title">Education</h4>
-
               <div class="simple-item">
                 <div class="simple-period">2023 – 현재</div>
                 <div class="simple-content">
@@ -194,24 +195,72 @@
 
             <div class="simple-section">
               <h4 class="simple-title">Blog</h4>
-
               <div class="blog-links">
-                <a
-                  href="https://zingangyyy.tistory.com/"
-                  class="simple-blog-link"
-                  target="_blank"
-                >
-                  <span class="blog-name">진강이의 성장일지 (기술/경제)</span>
-                  <span class="blog-platform">티스토리</span>
+                <a href="https://zingangyyy.tistory.com/" class="simple-blog-link" target="_blank">
+                  <span class="blog-icon"><i class="fas fa-pen-to-square"></i></span>
+                  <span class="blog-info">
+                    <span class="blog-name">진강이의 성장일지</span>
+                    <span class="blog-desc-small">기술 · 경제</span>
+                  </span>
+                  <span class="blog-platform">티스토리 →</span>
                 </a>
-                <a
-                  href="https://blog.naver.com/lyl2849"
-                  class="simple-blog-link"
-                  target="_blank"
-                >
-                  <span class="blog-name">진강이의 서랍</span>
-                  <span class="blog-platform">네이버</span>
+                <a href="https://blog.naver.com/lyl2849" class="simple-blog-link" target="_blank">
+                  <span class="blog-icon"><i class="fas fa-book-open"></i></span>
+                  <span class="blog-info">
+                    <span class="blog-name">진강이의 서랍</span>
+                    <span class="blog-desc-small">일상 · 생각</span>
+                  </span>
+                  <span class="blog-platform">네이버 →</span>
                 </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 오른쪽 컬럼 -->
+          <div class="about-right">
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="about-stat-number">5</span>
+                <span class="about-stat-label">수상</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number">100K+</span>
+                <span class="about-stat-label">블로그 조회수</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number">1</span>
+                <span class="about-stat-label">창업 경험</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number">10+</span>
+                <span class="about-stat-label">프로젝트</span>
+              </div>
+            </div>
+
+            <div class="simple-section">
+              <h4 class="simple-title">Timeline</h4>
+              <div class="about-timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot active"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2026.03 ~</span>
+                    <p>아주대학교 Ilab 학부연구생 · 금융프랜즈 · AWS Cloud Camp 수료</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2025</span>
+                    <p>블록체인 AML 시스템 개발 · 학생창업유망팀 300+ 선정 · 수상 5회</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2023.08</span>
+                    <p>Paletting 창업 · 아주대학교 소프트웨어 × 금융공학 입학</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -365,7 +414,7 @@
             </div>
           </div>
           <div class="project-card">
-            <div class="project-image dividend-bg">
+            <div class="project-image" style="background-image: url('assets/images/배당.png'); background-size: cover; background-position: center;">
               <div class="project-overlay">
                 <div class="project-links">
                   <a
@@ -470,113 +519,6 @@
       </div>
     </section>
 
-    <!-- Activities Section -->
-    <section id="activities" class="activities">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Activities</h2>
-        </div>
-        <div class="activities-timeline">
-          <div class="activity-timeline-item">
-            <div class="activity-header">
-              <div class="activity-timeline-details">
-                <h3>연세대 블록체인 소학회 Bay 16기</h3>
-                <p class="activity-org">
-                  연세대학교 소학회 Bay | 2025.07 ~ 진행
-                </p>
-              </div>
-              <div class="activity-badge active">
-                <i class="fas fa-rocket"></i>
-                <span class="activity-year">진행중</span>
-              </div>
-            </div>
-            <ul class="activity-points">
-              <li>크립토 모니터링 세션 리드</li>
-              <li>DeFi/AML 최신 동향 연구 및 학술 교류</li>
-              <li>블록체인 컨트랙트 개발 및 운영, 해커톤 참여</li>
-              <li>개발 및 리서치 팀 활동 - 블록체인 보안 사고 관련 미디엄 작성</li>
-            </ul>
-          </div>
-
-          <div class="activity-timeline-item">
-            <div class="activity-badge completed">
-              <i class="fas fa-heart"></i>
-              <span class="activity-year">2023.12</span>
-            </div>
-            <div class="activity-line"></div>
-            <div class="activity-timeline-details">
-              <h3>
-                Paletting – 가치관 기반 소개팅 플랫폼 - 창업자 & 기획 리더
-              </h3>
-              <p class="activity-org">개인 창업 | 2023.08 ~ 2023.12</p>
-              <ul class="activity-points">
-                <li>
-                  가치관 설문 데이터를 활용한 매칭 알고리즘 기획
-                </li>
-                <li>SNS 마케팅으로 150명+ 사용자 확보</li>
-                <li>
-                  4인 팀 리딩, 서비스 기획·디자인·운영 총괄
-                </li>
-              </ul>
-            </div>
-            <ul class="activity-points">
-              <li>가치관 설문 데이터를 활용한 매칭 알고리즘 기획</li>
-              <li>SNS 마케팅으로 150명+ 사용자 확보</li>
-              <li>4인 팀 리딩, 서비스 기획·디자인·운영 총괄</li>
-            </ul>
-          </div>
-
-          <div class="activity-timeline-item">
-            <div class="activity-header">
-              <div class="activity-timeline-details">
-                <h3>AJOU x AWS Cloud Camp 수료</h3>
-                <p class="activity-org">아주대학교 | 2026.03.28</p>
-              </div>
-              <div class="activity-badge completed">
-                <i class="fas fa-check-circle"></i>
-                <span class="activity-year">2026.03</span>
-              </div>
-            </div>
-            <ul class="activity-points">
-              <li>AWS 클라우드 서비스 학습 및 직접 배포 실습 (Cloud9, Lambda, EC2)</li>
-            </ul>
-          </div>
-
-          <div class="activity-timeline-item">
-            <div class="activity-header">
-              <div class="activity-timeline-details">
-                <h3>Ilab 김기형 교수님 학부연구생</h3>
-                <p class="activity-org">아주대학교 Ilab | 2026.03 ~ 진행</p>
-              </div>
-              <div class="activity-badge active">
-                <i class="fas fa-rocket"></i>
-                <span class="activity-year">진행중</span>
-              </div>
-            </div>
-            <ul class="activity-points">
-              <li>블록체인 이상거래 탐지 프로젝트 진행 중</li>
-            </ul>
-          </div>
-
-          <div class="activity-timeline-item">
-            <div class="activity-header">
-              <div class="activity-timeline-details">
-                <h3>금융프랜즈</h3>
-                <p class="activity-org">2026.03 ~ 진행</p>
-              </div>
-              <div class="activity-badge active">
-                <i class="fas fa-rocket"></i>
-                <span class="activity-year">진행중</span>
-              </div>
-            </div>
-            <ul class="activity-points">
-              <li>금융 정책 소개 유튜브 활동</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Awards Section -->
     <section id="awards" class="awards">
       <div class="container">
@@ -585,6 +527,9 @@
         </div>
         <div class="awards-grid">
           <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/자주연_썸네일.jpg" alt="2025-2 AJOU SOFTCON 연구부문 수상" loading="lazy" />
+            </div>
             <div class="award-header">
               <div class="award-content">
                 <h3>
@@ -596,9 +541,7 @@
                   >
                 </h3>
                 <div class="award-meta">
-                  <span class="award-organization"
-                    >아주대학교 SW융합교육원</span
-                  >
+                  <span class="award-organization">아주대학교 SW융합교육원</span>
                   <span class="award-date">2025.12.04</span>
                 </div>
               </div>
@@ -608,28 +551,22 @@
             </div>
             <div class="award-description">
               <ul>
-                <li>
-                  Rule-Based Scoring과 Graph Pattern Analysis를 통합한 2단계
-                  하이브리드 블록체인 AML 탐지 시스템
-                </li>
+                <li>Rule-Based Scoring과 Graph Pattern Analysis를 통합한 2단계 하이브리드 블록체인 AML 탐지 시스템</li>
               </ul>
             </div>
           </div>
           <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/SW기초교육_소프트콘_수상.jpg" alt="2025 AJOU SOFTCON SW기초교육 수상" loading="lazy" />
+            </div>
             <div class="award-header">
               <div class="award-content">
                 <h3>
-                  <a
-                    href="https://github.com/yelim8902/XAI_AML"
-                    target="_blank"
-                    rel="noopener"
-                    >2025 AJOU SOFTCON (SW 기초교육)</a
-                  >
+                  <a href="https://github.com/yelim8902/XAI_AML" target="_blank" rel="noopener"
+                    >2025 AJOU SOFTCON (SW 기초교육)</a>
                 </h3>
                 <div class="award-meta">
-                  <span class="award-organization"
-                    >아주대학교 SW융합교육원</span
-                  >
+                  <span class="award-organization">아주대학교 SW융합교육원</span>
                   <span class="award-date">2025.09.30</span>
                 </div>
               </div>
@@ -640,20 +577,19 @@
             <div class="award-description">
               <ul>
                 <li>SHAP-XAI 기반 STR 보고서 자동화 시스템 설계/구현</li>
-                <li>
-                  이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화
-                </li>
+                <li>이상거래 탐지 근거 요약 및 템플릿 기반 보고서 생성 자동화</li>
               </ul>
             </div>
           </div>
           <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/파토시마이너_인증서.jpeg" alt="SW융합창업캠프 우수상" loading="lazy" />
+            </div>
             <div class="award-header">
               <div class="award-content">
                 <h3>2025년 제 5회 SW융합창업캠프</h3>
                 <div class="award-meta">
-                  <span class="award-organization"
-                    >경희대학교 SW중심대학사업단</span
-                  >
+                  <span class="award-organization">경희대학교 SW중심대학사업단</span>
                   <span class="award-date">2025.07.05</span>
                 </div>
               </div>
@@ -663,22 +599,16 @@
             </div>
             <div class="award-description">
               <ul>
-                <li>
-                  암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓'
-                  제안
-                </li>
-                <li>
-                  팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의
-                  전체 아키텍처 설계 주도
-                </li>
-                <li>
-                  교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정 (팀명
-                  : 파토시마이너)
-                </li>
+                <li>암표 원천 차단 블록체인 기반 NFT 티켓팅 플랫폼 '트러스티켓' 제안</li>
+                <li>팀 리더로서 DID 인증과 NFT 티켓을 결합한 암표 방지 솔루션의 전체 아키텍처 설계 주도</li>
+                <li>교육부, 과기부 공동 주관 '2025 학생창업유망팀 300+' 선정 (팀명: 파토시마이너)</li>
               </ul>
             </div>
           </div>
           <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/6.2024미래도서관정책아이디어해커톤_입상.jpg" alt="미래도서관 정책 아이디어 해커톤 입상" loading="lazy" />
+            </div>
             <div class="award-header">
               <div class="award-content">
                 <h3>미래도서관 정책 아이디어 해커톤</h3>
@@ -699,6 +629,9 @@
             </div>
           </div>
           <div class="award-card">
+            <div class="award-image">
+              <img src="assets/images/파란학기2.JPG" alt="파란학기제 말해뭐해 팀 입상" loading="lazy" />
+            </div>
             <div class="award-header">
               <div class="award-content">
                 <h3>2026-2 파란학기제 말해뭐해 팀</h3>
@@ -721,6 +654,113 @@
       </div>
     </section>
 
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Activities</h2>
+        </div>
+        <div class="activities-timeline">
+
+          <div class="activity-timeline-item">
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <div class="activity-timeline-details">
+                <h3>Ilab 김기형 교수님 학부연구생</h3>
+                <p class="activity-org">아주대학교 Ilab | 2026.03 ~ 진행</p>
+              </div>
+              <div class="activity-badge active">
+                <span class="activity-year">진행중</span>
+              </div>
+            </div>
+            <ul class="activity-points">
+              <li>블록체인 이상거래 탐지 프로젝트 진행 중</li>
+            </ul>
+          </div>
+
+          <div class="activity-timeline-item">
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="activity-timeline-details">
+                <h3>금융프랜즈</h3>
+                <p class="activity-org">2026.03 ~ 진행</p>
+              </div>
+              <div class="activity-badge active">
+                <span class="activity-year">진행중</span>
+              </div>
+            </div>
+            <ul class="activity-points">
+              <li>금융 정책 소개 유튜브 활동</li>
+            </ul>
+          </div>
+
+          <div class="activity-timeline-item">
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="activity-timeline-details">
+                <h3>AJOU x AWS Cloud Camp 수료</h3>
+                <p class="activity-org">아주대학교 | 2026.03.28</p>
+              </div>
+              <div class="activity-badge completed">
+                <span class="activity-year">2026.03</span>
+              </div>
+            </div>
+            <ul class="activity-points">
+              <li>AWS 클라우드 서비스 학습 및 직접 배포 실습 (Cloud9, Lambda, EC2)</li>
+            </ul>
+          </div>
+
+          <div class="activity-timeline-item">
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <i class="fas fa-cube"></i>
+              </div>
+              <div class="activity-timeline-details">
+                <h3>연세대 블록체인 소학회 Bay 16기</h3>
+                <p class="activity-org">연세대학교 소학회 Bay | 2025.07 ~ 진행</p>
+              </div>
+              <div class="activity-badge active">
+                <span class="activity-year">진행중</span>
+              </div>
+            </div>
+            <ul class="activity-points">
+              <li>크립토 모니터링 세션 리드</li>
+              <li>DeFi/AML 최신 동향 연구 및 학술 교류</li>
+              <li>블록체인 컨트랙트 개발 및 운영, 해커톤 참여</li>
+              <li>개발 및 리서치 팀 활동 - 블록체인 보안 사고 관련 미디엄 작성</li>
+            </ul>
+          </div>
+
+          <div class="activity-timeline-item">
+            <div class="activity-header">
+              <div class="activity-icon-box">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <div class="activity-timeline-details">
+                <h3>Paletting – 가치관 기반 소개팅 플랫폼</h3>
+                <p class="activity-org">개인 창업 | 2023.08 ~ 2023.12</p>
+              </div>
+              <div class="activity-badge completed">
+                <span class="activity-year">2023.12</span>
+              </div>
+            </div>
+            <ul class="activity-points">
+              <li>가치관 설문 데이터를 활용한 매칭 알고리즘 기획</li>
+              <li>SNS 마케팅으로 150명+ 사용자 확보</li>
+              <li>4인 팀 리딩, 서비스 기획·디자인·운영 총괄</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
@@ -738,18 +778,29 @@
               </div>
             </div>
             <div class="contact-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <h4>전화번호</h4>
-                <p>010-2849-8902</p>
-              </div>
-            </div>
-            <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <h4>위치</h4>
                 <p>판교, 경기도, 대한민국</p>
               </div>
+            </div>
+            <div class="contact-social">
+              <a href="https://github.com/yelim8902" class="contact-social-link" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/yelim-lee-80899a305/" class="contact-social-link" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://zingangyyy.tistory.com/" class="contact-social-link" target="_blank" rel="noopener">
+                <i class="fas fa-pen-to-square"></i>
+                <span>기술 블로그</span>
+              </a>
+              <a href="https://blog.naver.com/lyl2849" class="contact-social-link" target="_blank" rel="noopener">
+                <i class="fas fa-book-open"></i>
+                <span>일상 블로그</span>
+              </a>
             </div>
           </div>
           <form id="contact-form" class="contact-form">
@@ -781,9 +832,23 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-name">이예림</span>
+            <p class="footer-tagline">소프트웨어 × 금융공학 · 블록체인 · 데이터</p>
+          </div>
+          <nav class="footer-nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#activities">Activities</a>
+            <a href="#awards">Awards</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-divider"></div>
         <div class="footer-content">
           <div class="footer-text">
-            <p>&copy; 2025 예림. All rights reserved.</p>
+            <p>&copy; 2026 이예림. All rights reserved.</p>
           </div>
           <div class="social-links">
             <a
@@ -826,6 +891,7 @@
         </div>
       </div>
     </footer>
+
 
     <script src="assets/js/main.js"></script>
   </body>
