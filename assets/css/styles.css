@@ -354,6 +354,14 @@ body.loaded {
   border-radius: 2px;
 }
 
+.hero-desc {
+  margin-top: 16px;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+
 .hero-keywords {
   display: flex;
   gap: 12px;
