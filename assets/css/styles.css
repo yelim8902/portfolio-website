@@ -1,34 +1,73 @@
 :root {
-  --color-bg: #f5f7fa;
+  /* Colors */
+  --color-bg: #f8f9fc;
   --color-surface: #ffffff;
-  --color-text: #191f28;
-  --color-muted: #8b95a1;
+  --color-surface-alt: #f1f3f8;
+  --color-text: #111827;
+  --color-text-secondary: #4b5563;
+  --color-muted: #9ca3af;
   --color-primary: #3182f6;
   --color-primary-700: #1b64da;
-  --color-accent: #00d084;
-  --color-footer-bg: #1c2b3a;
-  --color-border: rgba(0, 0, 0, 0.08);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --color-primary-tint: rgba(49, 130, 246, 0.08);
+  --color-accent: #10b981;
+  --color-footer-bg: #111827;
+  --color-border: rgba(0, 0, 0, 0.07);
+  --color-border-strong: rgba(0, 0, 0, 0.14);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.10);
+
+  /* Border radius */
   --radius-sm: 8px;
   --radius-md: 12px;
-  --radius-lg: 16px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Typography scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #0f1115;
-    --color-surface: #161a22;
+    --color-bg: #0d1117;
+    --color-surface: #161b22;
+    --color-surface-alt: #1c2330;
     --color-text: #e6edf3;
-    --color-muted: #9aa7b1;
+    --color-text-secondary: #adbac7;
+    --color-muted: #768390;
     --color-primary: #4aa3ff;
     --color-primary-700: #2d7bd6;
-    --color-accent: #51d88a;
-    --color-footer-bg: #0d1117;
-    --color-border: rgba(255, 255, 255, 0.08);
-    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.45);
+    --color-primary-tint: rgba(74, 163, 255, 0.10);
+    --color-accent: #3dd68c;
+    --color-footer-bg: #010409;
+    --color-border: rgba(255, 255, 255, 0.07);
+    --color-border-strong: rgba(255, 255, 255, 0.14);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.45);
   }
 }
 /* Reset and Base Styles */
