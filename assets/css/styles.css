@@ -761,6 +761,11 @@ section {
   letter-spacing: -0.01em;
 }
 
+.about-intro-full {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .simple-section {
   margin-bottom: 32px;
 }
