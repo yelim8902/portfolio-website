@@ -244,6 +244,18 @@ body.loaded {
   overflow: hidden;
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(49, 130, 246, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+}
+
 @media (prefers-color-scheme: dark) {
   .hero {
     background: linear-gradient(150deg, rgba(74, 163, 255, 0.08) 0%, var(--color-bg) 55%);
@@ -301,6 +313,10 @@ body.loaded {
   line-height: 1.2;
   letter-spacing: -0.02em;
   text-align: left;
+}
+
+.hero-name {
+  color: var(--color-primary);
 }
 
 .hero-title br {
@@ -513,6 +529,45 @@ body.loaded {
   object-fit: cover;
   transition: opacity 0.3s ease;
   display: block;
+}
+
+.hero-stat-chip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 8px 16px;
+  box-shadow: var(--shadow-md);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  z-index: 10;
+  white-space: nowrap;
+  animation: chipFloat 3s ease-in-out infinite;
+}
+
+.chip-top {
+  top: 20px;
+  right: -20px;
+  animation-delay: 0s;
+}
+
+.chip-bottom {
+  bottom: 40px;
+  left: -24px;
+  animation-delay: 1.5s;
+}
+
+.chip-icon {
+  font-size: 1rem;
+}
+
+@keyframes chipFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }
 
 /* Scroll Indicator */
