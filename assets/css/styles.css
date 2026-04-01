@@ -401,8 +401,9 @@ body.loaded {
 
 .hero-buttons {
   display: flex;
-  gap: 20px;
+  gap: 12px;
   flex-wrap: wrap;
+  margin-top: 32px;
 }
 
 .btn {
