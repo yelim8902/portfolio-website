@@ -89,6 +89,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// Scroll progress bar
+const scrollProgressBar = document.getElementById("scrollProgressBar");
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  scrollProgressBar.style.width = progress + "%";
+});
+
 // Navbar background change on scroll
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
